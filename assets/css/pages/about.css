@@ -1,0 +1,110 @@
+/* FV: mobile default */
+.title-page-jp {
+    font-size: 32px;
+}
+ 
+.about-fv-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+ 
+ 
+.about-description {
+    padding-bottom: 80px;
+}
+ 
+.about-description p {
+    margin: 0 0 1.5em;
+}
+ 
+.about-description p:last-child {
+    margin-bottom: 0;
+}
+ 
+ 
+@media screen and (min-width: 992px) {
+    .title-page-jp {
+        font-size: 48px;
+    }
+ 
+    .about-description {
+        padding-bottom: 275px;
+    }
+}
+ 
+/* CONCEPT*/
+/* ==========================================================
+   Concept Features — mobile-first
+   Requires Bootstrap 5 grid (container, row, col-*, g-*)
+   ========================================================== */
+ 
+/* ---------- Base (mobile) ---------- */
+/* ---------- Base (mobile) ---------- */
+.concept-features {
+  padding: 3rem 0;
+}
+ 
+/* Space between the three pillars */
+.feature-item + .feature-item {
+  margin-top: 3rem;
+}
+ 
+.feature-title {
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.15em;
+  writing-mode: vertical-rl;
+ 
+}
+ 
+/* ---------- Base (SP / Mobile) ---------- */
+.feature-img {
+  display: block;
+  width: 52vw;          /* resize all images on SP here (195 / 375 ≈ 52) */
+  max-width: 100%;      /* never wider than its column */
+  height: auto;
+  aspect-ratio: 3 / 2;  /* 195 × 130 */
+  object-fit: cover;
+}
+ 
+/* Image 2 sits in the right-hand column, so push it to the right edge */
+.feature-photo--2 .feature-img {
+  margin-left: auto;
+}
+ 
+/* ---------- Desktop ≥ 992px ---------- */
+@media (min-width: 992px) {
+  .concept-features { padding: 6rem 0; }
+  .feature-item + .feature-item { margin-top: 6rem; }
+  .feature-desc { text-align: center; }
+ 
+  /* Vertical title, centered above the images */
+  .feature-title {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    margin: 0;
+  }
+ 
+  /* Image size on PC: percentage of each half-column */
+  .feature-img {
+    width: 40%;
+  }
+ 
+  /* Image 1: left half, gap before the center line */
+  .feature-photo--1 .feature-img {
+    margin: 0 8% 0 auto;
+  }
+ 
+  /* Image 2: right half, dropped lower for the stagger */
+  .feature-photo--2 .feature-img {
+    margin: 2.75rem 0 0 8%;
+  }
+ 
+  /* Image 3: next row, left half, ends just past the center line */
+  .feature-photo--3 .feature-img {
+    margin: 0.75rem -6% 0 auto;
+  }
+}
+ 
