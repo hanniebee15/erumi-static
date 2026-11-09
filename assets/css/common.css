@@ -44,3 +44,427 @@ a:focus-visible, button:focus-visible {
 }
 
 /* ヘッダー・フッター・パンくず・共通ボタン等はここから実装してください。 */
+/* header */
+.nav-item {
+    white-space: nowrap;
+}
+
+.gap-x-16 {
+    column-gap: 16px;
+}
+
+.nav-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 118px;
+    height: 45px;
+    padding: 0;
+    border: 0;
+    border-radius: 999px;
+    font-family: "Shippori Mincho", "Noto Serif JP", serif;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.2em;
+    text-indent: 0.2em;        /* balances trailing letter-spacing so text is truly centered */
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 31px;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+
+
+@media (min-width: 992px) {
+    .nav-item,
+    .nav-button {
+        font-size: 12px;
+    }
+
+    .nav-button {
+        width: 92px;
+        height: 40px;
+        letter-spacing: 0.1em;
+        text-indent: 0.1em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .gap-xl-x-32 {
+        column-gap: 32px;
+    }
+
+    .nav-item,
+    .nav-button {
+        font-size: 16px;
+    }
+
+    .nav-button {
+        width: 118px;
+        height: 45px;
+        letter-spacing: 0.2em;
+        text-indent: 0.2em;
+    }
+}
+
+/* =========================================
+    HAMBURGER MENU
+========================================= */
+
+.fullscreen-menu {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.fullscreen-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* Inner Container */
+.fullscreen-menu-inner {
+    position: relative;
+    width: 100%;
+    min-height: 90%;
+    padding: 32px 5% 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* =========================================
+    MENU HEADER
+========================================= */
+
+.fullscreen-menu-header {
+    position: absolute;
+    top: 30px;
+    left: 5%;
+    right: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.fullscreen-menu-logo {
+    display: block;
+    width: 30px;
+}
+
+.fullscreen-menu-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Close Button */
+.menu-close {
+    position: relative;
+    width: 32px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.fullscreen-menu {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    z-index: 99999;
+    background: var(--color-black);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+    overflow-y: auto;
+}
+
+.menu-close span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 31px;
+    height: 1px;
+    background: var(--color-white);
+    transition: transform 0.3s ease;
+}
+
+.menu-close span:first-child {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.menu-close span:last-child {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.menu-close:hover span:first-child {
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.menu-close:hover span:last-child {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* =========================================
+    DESKTOP NAVIGATION
+========================================= */
+
+.mobile-menu-nav {
+    display: none;
+}
+.fullscreen-menu-nav {
+    width: 60%;
+    max-width: 900px;
+    margin: 0 auto 72px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    text-align: center;
+}
+
+.menu-nav-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 40px;
+}
+
+/* .menu-nav-column a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 400;
+    transition: opacity 0.3s ease;
+} */
+
+.menu-nav-column a:hover {
+    opacity: 0.55;
+}
+
+/* Navigation Animation */
+.menu-nav-column a {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.fullscreen-menu.is-open .menu-nav-column a {
+    animation: menuFadeUp 0.5s ease forwards;
+}
+
+.fullscreen-menu.is-open .menu-nav-column:nth-child(1) a {
+    animation-delay: 0.1s;
+}
+
+.fullscreen-menu.is-open .menu-nav-column:nth-child(2) a {
+    animation-delay: 0.16s;
+}
+
+.fullscreen-menu.is-open .menu-nav-column:nth-child(3) a {
+    animation-delay: 0.22s;
+}
+
+.fullscreen-menu.is-open .menu-nav-column:nth-child(4) a {
+    animation-delay: 0.28s;
+}
+
+@keyframes menuFadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================
+    CTA BUTTONS
+========================================= */
+
+.fullscreen-menu-cta {
+    width: 60%;
+    max-width: 900px;
+    margin: 0 auto 32px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.menu-cta-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 33px;
+    background: var(--color-white);
+    color: var(--color-black);
+    text-decoration: none;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.menu-cta-button {
+    width: 100%;
+    min-height: 74px;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+}
+
+.menu-cta-button:hover {
+    background: var(--color-white);
+    color: var(--color-black);
+}
+
+/* =========================================
+   MENU FOOTER
+========================================= */
+
+.fullscreen-menu-footer {
+    width: 60%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.menu-footer-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-footer-links a,
+.menu-language a,
+.menu-language span {
+    color: var(--color-white);
+    text-decoration: none;
+    letter-spacing: 0.04em;
+}
+
+.menu-language {
+    white-space: nowrap;
+    display: flex;
+    gap: 8px;
+    opacity: 70%;
+}
+
+.menu-footer-links a:hover,
+.menu-language a:hover {
+    color: var(--color-white);
+}
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 767.98px) {
+
+    .fullscreen-menu {
+        background: var(--color-black);
+    }
+
+    .fullscreen-menu-inner {
+        min-height: 100%;
+        padding: 85px 7% 30px;
+        justify-content: flex-start;
+    }
+
+    .fullscreen-menu-header {
+        top: 40px;
+        left: 7%;
+        right: 7%;
+    }
+
+    .fullscreen-menu-logo {
+        width: 25px;
+    }
+
+    .fullscreen-menu-nav {
+        display: none;
+    }
+
+    /* Vertical Navigation */
+    .mobile-menu-nav {
+        margin: 0 auto 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .menu-nav-column {
+        display: contents;
+    }
+
+    /* Stacked CTA Buttons */
+    .fullscreen-menu-cta {
+        width: 100%;
+        margin: 0 auto 32px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-cta-button {
+        width: 100%;
+        min-height: 61px;
+    }
+
+    /* Mobile Footer */
+    .fullscreen-menu-footer {
+        width: 100%;
+        align-items: flex-end;
+        gap: 10px;
+    }
+
+    .menu-footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .menu-language {
+        margin-bottom: 0;
+    }
+
+    /* .fullscreen-menu-inner {
+    padding-top: 174px;
+    padding-bottom: 20px;
+    } */
+
+    .fullscreen-menu-nav {
+        gap: 8px;
+    }
+
+}
+
+
