@@ -467,4 +467,49 @@ a:focus-visible, button:focus-visible {
 
 }
 
+/* FOOTER */
+ 
+.site-footer {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+ 
+.nav-section-wrapper{
+    border-bottom: 1px solid var(--color-white);
+}
+ 
+.footer-logo img{
+    width: 36px;
+    height: 106px;
+}
+ 
+.footer-nav{
+    padding: 0px 40px;
+}
+ 
+.font-cinzel {
+font-family: 'Cinzel', serif;
+letter-spacing: 0.25em;
+}
+ 
+/* Minimal White Action Buttons */
+.btn-footer-action {
+    padding: 16px 0px;
+}
+ 
+@media (min-width: 992px) {
+    .footer-logo img{
+        width: 50px;
+        height: 149px;
+    }
+ 
+    .custom-nav-flex {
+        gap: 24px 56px; /* 24px row gap (if wrapping), 56px column gap */
+    }
+ 
+    .btn-footer-action {
+        padding: 16px 77px;
+    }
+}
+
 
