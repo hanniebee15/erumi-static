@@ -1,0 +1,133 @@
+/*---------------------------------------------------
+共通line-heightここから
+----------------------------------------------------*/
+
+.lh-0f {
+  line-height: 0.5 !important;
+}
+
+.lh-1 {
+  line-height: 1 !important;
+}
+
+.lh-1f {
+  line-height: 1.5 !important;
+}
+
+.lh-2 {
+  line-height: 2 !important;
+}
+
+.lh-2f {
+  line-height: 2.5 !important;
+}
+
+.lh-3 {
+  line-height: 3 !important;
+}
+
+.line-height-20 {
+  line-height: 20px;
+}
+
+.line-height-24 {
+  line-height: 24px;
+}
+
+.line-height-26 {
+  line-height: 26px;
+}
+
+.line-height-27 {
+  line-height: 27px;
+}
+
+.line-height-30 {
+  line-height: 30px;
+}
+
+.line-height-32 {
+  line-height: 32px;
+}
+
+.line-height-36 {
+  line-height: 36px;
+}
+
+.line-height-40 {
+  line-height: 40px;
+}
+
+.line-height-45 {
+  line-height: 45px;
+}
+
+.line-height-50 {
+  line-height: 50px;
+}
+/*-------------- lg ------------------*/
+@media screen and (min-width: 992px) {
+  .lh-lg-0f {
+    line-height: 0.5 !important;
+  }
+
+  .lh-lg-1 {
+    line-height: 1 !important;
+  }
+
+  .lh-lg-1f {
+    line-height: 1.5 !important;
+  }
+
+  .lh-lg-2 {
+    line-height: 2 !important;
+  }
+
+  .lh-lg-2f {
+    line-height: 2.5 !important;
+  }
+
+  .lh-lg-3 {
+    line-height: 3 !important;
+  }
+
+  .line-height-lg-20 {
+    line-height: 20px;
+  }
+
+  .line-height-lg-24 {
+    line-height: 24px;
+  }
+
+  .line-height-lg-26 {
+    line-height: 26px;
+  }
+
+  .line-height-lg-27 {
+    line-height: 27px;
+  }
+
+  .line-height-lg-30 {
+    line-height: 30px;
+  }
+
+  .line-height-lg-32 {
+    line-height: 32px;
+  }
+
+  .line-height-lg-36 {
+    line-height: 36px;
+  }
+
+  .line-height-lg-40 {
+    line-height: 40px;
+  }
+
+  .line-height-lg-45 {
+    line-height: 45px;
+  }
+
+  .line-height-lg-50 {
+    line-height: 50px;
+  }
+}

@@ -1,0 +1,56 @@
+/*---------------------------------------------------
+共通カラー
+Figmaのカラーとフォーム内の実使用色。既存の変数＋クラス形式を維持。
+----------------------------------------------------*/
+:root {
+    --color-black: #141414;
+    --color-white: #ffffff;
+    --color-dark: #222222;
+    --color-light: #f3f3f3;
+    --color-gray: #b4b4b4;
+    --color-muted: #757575;
+    --color-required: #d00000;
+}
+
+.bg-black {
+    background-color: var(--color-black) !important;
+}
+.text-black {
+    color: var(--color-black) !important;
+}
+.bg-white {
+    background-color: var(--color-white) !important;
+}
+.text-white {
+    color: var(--color-white) !important;
+}
+.bg-dark {
+    background-color: var(--color-dark) !important;
+}
+.text-dark {
+    color: var(--color-dark) !important;
+}
+.bg-light {
+    background-color: var(--color-light) !important;
+}
+.text-light {
+    color: var(--color-light) !important;
+}
+.bg-gray {
+    background-color: var(--color-gray) !important;
+}
+.text-gray {
+    color: var(--color-gray) !important;
+}
+.bg-muted {
+    background-color: var(--color-muted) !important;
+}
+.text-muted {
+    color: var(--color-muted) !important;
+}
+.bg-required {
+    background-color: var(--color-required) !important;
+}
+.text-required {
+    color: var(--color-required) !important;
+}
