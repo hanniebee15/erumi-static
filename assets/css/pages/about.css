@@ -30,9 +30,10 @@
  
 
 /* CONCEPT*/
-.feature-item {
-    padding-bottom: 120px;
-}
+.feature-item-1,
+.feature-item-2 {
+        padding-bottom: 120px;
+    }
 
 
 .feature-title {
@@ -49,8 +50,8 @@
 }
 
 
-  .feature-photo--2 .feature-img,
-      .feature-photo--3 .feature-img  {
+  .feature-photo-2 .feature-img,
+      .feature-photo-3 .feature-img  {
     margin-top: 2rem;
   }
 
@@ -66,11 +67,11 @@
     margin-bottom: -5%;
   }
   
-  .feature-photo--1 {
+  .feature-photo-1 {
     margin-top: -0.5rem;
   }
-    .feature-photo--2,
-      .feature-photo--3   {
+    .feature-photo-2,
+      .feature-photo-3   {
     margin-top: 2rem;
   }
 
@@ -78,15 +79,15 @@
     width: 43%;
   }
 
-  .feature-photo--1 .feature-img {
+  .feature-photo-1 .feature-img {
     margin: 0 5% 0 auto;
   }
 
-  .feature-photo--2 .feature-img {
+  .feature-photo-2 .feature-img {
     margin: 2rem 0 0 5%;
   }
 
-  .feature-photo--3 .feature-img {
+  .feature-photo-3 .feature-img {
     margin: 0.25rem -7.5% 0 auto;
   }
 }
