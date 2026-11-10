@@ -1,0 +1,38 @@
+.fv-title {
+    position: absolute;
+    bottom: 120px;
+}
+
+.btn-news::after {
+    content: '▶';
+    font-size: 8px;
+    margin-left: 8px;
+}
+
+
+
+.top-about-section .about-blur-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    transform: translateY(-50%); /* Shifts it up by half of its own height */
+    pointer-events: none;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.top-about-section .about-blur-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    transform: translateY(50%) scaleY(-1); /* Shifts down by 50% and flips upward */
+    pointer-events: none;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
