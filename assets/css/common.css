@@ -45,6 +45,10 @@ a:focus-visible, button:focus-visible {
 
 /* ヘッダー・フッター・パンくず・共通ボタン等はここから実装してください。 */
 /* header */
+.site-header .header-wrapper {
+    z-index: 1000 !important;
+}
+
 .nav-item {
     white-space: nowrap;
 }
@@ -491,7 +495,7 @@ a:focus-visible, button:focus-visible {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    z-index: 999;
+    z-index: 2;
 }
 
 .banner-section .col-12::after {
@@ -501,7 +505,7 @@ a:focus-visible, button:focus-visible {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.40); /* Pure black tint at 45% opacity */
+    background-color: rgba(0, 0, 0, 0.40);
     z-index: 1;
 }
 
