@@ -1,8 +1,5 @@
-/* FV: mobile default */
-.title-page-jp {
-    font-size: 32px;
-}
- 
+/* ABOUT FV*/
+
 .about-fv-image {
     display: block;
     width: 100%;
@@ -25,86 +22,80 @@
  
  
 @media screen and (min-width: 992px) {
-    .title-page-jp {
-        font-size: 48px;
-    }
- 
+
     .about-description {
         padding-bottom: 275px;
     }
 }
  
+
 /* CONCEPT*/
-/* ==========================================================
-   Concept Features — mobile-first
-   Requires Bootstrap 5 grid (container, row, col-*, g-*)
-   ========================================================== */
- 
-/* ---------- Base (mobile) ---------- */
-/* ---------- Base (mobile) ---------- */
-.concept-features {
-  padding: 3rem 0;
+.feature-item {
+    padding-bottom: 120px;
 }
- 
-/* Space between the three pillars */
-.feature-item + .feature-item {
-  margin-top: 3rem;
-}
- 
+
+
 .feature-title {
   margin: 0;
-  font-size: 1.5rem;
-  letter-spacing: 0.15em;
   writing-mode: vertical-rl;
- 
 }
- 
-/* ---------- Base (SP / Mobile) ---------- */
+
 .feature-img {
   display: block;
-  width: 52vw;          /* resize all images on SP here (195 / 375 ≈ 52) */
-  max-width: 100%;      /* never wider than its column */
+  width: 100%;      
   height: auto;
-  aspect-ratio: 3 / 2;  /* 195 × 130 */
+  aspect-ratio: 3 / 2;
   object-fit: cover;
 }
- 
-/* Image 2 sits in the right-hand column, so push it to the right edge */
-.feature-photo--2 .feature-img {
-  margin-left: auto;
-}
- 
-/* ---------- Desktop ≥ 992px ---------- */
+
+
+  .feature-photo--2 .feature-img,
+      .feature-photo--3 .feature-img  {
+    margin-top: 2rem;
+  }
+
+
 @media (min-width: 992px) {
-  .concept-features { padding: 6rem 0; }
-  .feature-item + .feature-item { margin-top: 6rem; }
-  .feature-desc { text-align: center; }
- 
-  /* Vertical title, centered above the images */
+    .feature-item-1,
+    .feature-item-2 {
+        padding-bottom: 344px;
+    }
+
   .feature-title {
-    writing-mode: vertical-rl;
     text-orientation: upright;
-    margin: 0;
+    margin-bottom: -5%;
   }
- 
-  /* Image size on PC: percentage of each half-column */
+  
+  .feature-photo--1 {
+    margin-top: -0.5rem;
+  }
+    .feature-photo--2,
+      .feature-photo--3   {
+    margin-top: 2rem;
+  }
+
   .feature-img {
-    width: 40%;
+    width: 43%;
   }
- 
-  /* Image 1: left half, gap before the center line */
+
   .feature-photo--1 .feature-img {
-    margin: 0 8% 0 auto;
+    margin: 0 5% 0 auto;
   }
- 
-  /* Image 2: right half, dropped lower for the stagger */
+
   .feature-photo--2 .feature-img {
-    margin: 2.75rem 0 0 8%;
+    margin: 2rem 0 0 5%;
   }
- 
-  /* Image 3: next row, left half, ends just past the center line */
+
   .feature-photo--3 .feature-img {
-    margin: 0.75rem -6% 0 auto;
+    margin: 0.25rem -7.5% 0 auto;
   }
 }
- 
+
+
+/* ABOUT AKO */
+.about-space-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}

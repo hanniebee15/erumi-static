@@ -176,6 +176,10 @@ ERUMIで使用するフォント
   letter-spacing: 0.3em !important;
 }
 
+.ols-400 {
+  letter-spacing: 0.4em !important;
+}
+
 @media screen and (min-width: 768px) {
 
   .ols-md-0 {
@@ -265,6 +269,10 @@ ERUMIで使用するフォント
   .ols-md-300 {
     letter-spacing: 0.3em !important;
   }
+
+  .ols-md-400 {
+  letter-spacing: 0.4em !important;
+}
 }
 
 @media screen and (min-width: 992px) {
@@ -356,6 +364,10 @@ ERUMIで使用するフォント
   .ols-lg-300 {
     letter-spacing: 0.3em !important;
   }
+
+  .ols-lg-400 {
+  letter-spacing: 0.4em !important;
+}
 }
 
 @media screen and (min-width: 1200px) {
@@ -447,6 +459,9 @@ ERUMIで使用するフォント
   .ols-xl-300 {
     letter-spacing: 0.3em !important;
   }
+  .ols-xl-400 {
+    letter-spacing: 0.4em !important;
+}
 }
 
 @media screen and (min-width: 1400px) {
@@ -538,6 +553,10 @@ ERUMIで使用するフォント
   .ols-xxl-300 {
     letter-spacing: 0.3em !important;
   }
+
+  .ols-xxl-400 {
+    letter-spacing: 0.4em !important;
+}
 }
 
 /*---------------------------------------------------
