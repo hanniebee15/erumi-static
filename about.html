@@ -18,53 +18,51 @@
     <link rel="stylesheet" href="assets/css/spacing.css">
     <link rel="stylesheet" href="assets/css/pages/top.css">
     <link rel="stylesheet" href="assets/css/pages/about.css">  
-    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.bundle.min.js">
-    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.js">
-    <link rel="stylesheet" href="assets/js/common.js">
 </head>
 <body>
     <!-- header start -->
-        <header class="site-header">
-            <div class="position-fixed top-0 start-0 w-100">
-                <div class="container">
-                    <div class="row align-items-center spt-40 spt-lg-24">
- 
-                        <div class="col-auto col-lg-1">
-                            <figure class="m-0">
-                                <img src="assets/images/common/erumi-logo.svg" alt="erumi">
-                            </figure>
-                        </div>
- 
-                        <div class="col-lg-7 offset-lg-1 d-none d-lg-block">
-                            <ul class="nav-bar d-flex align-items-center justify-content-between list-unstyled ofs-5 ols-200 lh-2 text-white mb-0 flex-nowrap">
-                                <li class="nav-item link-hover"><a href="index.html">TOP</a></li>
-                                <li class="nav-item link-hover"><a href="about.html">ABOUT</a></li>
-                                <li class="nav-item link-hover"><a href="about_your_stay.html">ご滞在について</a></li>
-                                <li class="nav-item">お食事</li>
-                                <li class="nav-item link-hover"><a href="access.html">交通アクセス</a></li>
-                                <li class="nav-item">お問い合わせ</li>
-                            </ul>
-                        </div>
- 
-                        <div class="col col-lg-3">
-                            <ul class="d-flex align-items-center justify-content-end list-unstyled gap-x-16 gap-xl-x-32 text-body mb-0">
-                                <li class="nav-item ofs-5 ols-200 lh-2 text-white">EN/JP</li>
-                                <li class="nav-item">
-                                    <button type="button" class="nav-button ofs-5 ols-200 lh-2 bg-white text-black">予約する</button>
-                                </li>
-                                <li class="nav-item">
-                                    <button type="button" class="menu-toggle" aria-label="Menu">
-                                        <span></span><span></span><span></span>                                                                                      
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>
- 
+    <header class="site-header">
+        <div class="position-fixed top-0 start-0 w-100 header-wrapper">
+            <div class="container">
+                <div class="row align-items-center spt-40 spt-lg-24">
+
+                    <div class="col-auto col-lg-1 header-logo">
+                        <figure class="m-0">
+                            <img src="assets/images/common/erumi-logo.svg" alt="erumi">
+                        </figure>
                     </div>
+
+                    <div class="col-lg-7 offset-lg-1 d-none d-lg-block header-nav">
+                        <ul class="nav-bar d-flex align-items-center justify-content-between list-unstyled ofs-5 ofs-lg-3 ofs-xl-4 ofs-xxl-5 ols-200 ols-lg-50 ols-xl-100 ols-xxl-200 lh-2 column-gap-xl-2 column-gap-xxl-3 text-white mb-0 flex-nowrap">
+                            <li class="nav-item link-hover"><a href="index.html">TOP</a></li>
+                            <li class="nav-item link-hover"><a href="about.html">ABOUT</a></li>
+                            <li class="nav-item link-hover"><a href="about_your_stay.html">ご滞在について</a></li>
+                            <li class="nav-item link-hover"><a href="stories.html">よみもの</a></li>
+                            <li class="nav-item link-hover"><a href="news.html">お知らせ</a></li>
+                            <li class="nav-item link-hover"><a href="access.html">交通アクセス</a></li>
+                            <li class="nav-item link-hover"><a href="faq.html">よくあるご質問</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col col-lg-3 header-actions">
+                        <ul class="d-flex align-items-center justify-content-end list-unstyled column-gap-3 column-gap-xxl-4 text-body mb-0">
+                            <li class="nav-item ofs-5 ofs-lg-3 ofs-xl-4 ofs-xxl-5 ols-200 ols-lg-50 ols-xl-100 ols-xxl-200 lh-2 text-white">EN/JP</li>
+                            <li class="nav-item">
+                                <button type="button" class="nav-button ofs-5 ofs-lg-3 ofs-xl-4 ofs-xxl-5 ols-200 ols-lg-50 ols-xl-100 ols-xxl-200 lh-2 bg-white text-black">予約する</button>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="menu-toggle" aria-label="Menu">
+                                    <span></span><span></span><span></span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
-        </header>
-       
+        </div>
+    </header>
+        
         <!-- Breadcrumb -->
         <nav class="breadcrumb-section spt-152 spt-lg-128" aria-label="breadcrumb">
             <div class="container">
@@ -344,7 +342,7 @@
                                         <a href="#" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">よみもの</a>
                                         <a href="#" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">お知らせ</a>
                                         <a href="#" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">交通アクセス</a>
-                                        <a href="#" class="link-hover spb-lg-0 ff-mincho lh-1f ols-200 text-white">よくある質問</a>
+                                        <a href="faq.html" class="link-hover spb-lg-0 ff-mincho lh-1f ols-200 text-white">よくある質問</a>
                                     </div>
                                     <div class="d-flex flex-column flex-lg-row justify-content-md-start gap-3">
                                         <a href="#" class="text-nowrap text-center btn-footer-action bg-white text-black link-hover lh-1f ols-200">お問い合わせ</a>
@@ -372,5 +370,9 @@
                     </div>
                 </div>
             </footer>
+
+<script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/js/common.js"></script>
 </body>
 </html>
