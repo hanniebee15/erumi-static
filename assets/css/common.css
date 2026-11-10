@@ -44,15 +44,7 @@ a:focus-visible, button:focus-visible {
 }
 
 /* ヘッダー・フッター・パンくず・共通ボタン等はここから実装してください。 */
-<<<<<<< HEAD
-/* header */
-.site-header .header-wrapper {
-    z-index: 1000 !important;
-}
-
-=======
 /* HEADER */
->>>>>>> abaf59ffef5e66bb3ae33eabf8c4837dd17352e4
 .nav-item {
     white-space: nowrap;
 }
