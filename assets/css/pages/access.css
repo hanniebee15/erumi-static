@@ -1,0 +1,38 @@
+/* ==========================================================================
+
+
+/* --- BACKGROUND  --- */
+.erumi-access-section {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* --- FV RESPONSIVE IMAGE --- */
+.erumi-access-hero-img-wrap {
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.erumi-access-hero-img {
+  height: clamp(60vh, 10vw, 50vh);
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* --- INFO LIST & DIVIDERS --- */
+.erumi-access-info-list {
+  border-color: rgba(247, 244, 238, 0.25) !important;
+}
+
+.erumi-access-info-item {
+  border-color: rgba(247, 244, 238, 0.2) !important;
+}
+
+/* --- MAP WRAPPER --- */
+.erumi-access-map-wrap {
+  height: clamp(260px, 35vw, 450px);
+  border: 1px solid rgba(247, 244, 238, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
