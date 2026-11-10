@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@import "color.css";
+@import "font.css";
+@import "line-height.css";
+@import "margin.css";
+@import "padding.css";
+@import "spacing.css";
+
+/* ==========================================================================
+   ERUMI Stories (よみもの) Page Stylesheet
+   ========================================================================== */
+
+/* Vertical Burgundy and Black Striped Background */
+.stories-section {
+  min-height: 100vh;
+}
+
+/* Container Width Adjustments */
+.stories-container {
+  max-width: 1080px;
+}
+
+/* Header Styling */
+.stories-subtitle {
+  color: var(--color-white);
+  opacity: 0.85;
+}
+
+.stories-title {
+  color: var(--color-white);
+}
+
+/* Story Card */
+.story-card {
+  transition: opacity 0.3s ease;
+}
+
+.story-card:hover {
+  opacity: 0.85;
+}
+
+.story-link {
+  color: inherit;
+  display: block;
+}
+
+/* Featured Image Placeholder Container */
+.story-img-wrapper {
+  aspect-ratio: 16 / 10;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--color-gray);
+}
+
+.story-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Publication Date */
+/* .story-date {
+  opacity: 0.75;
+} */
+
+.px-lg-42 {
+  padding-left: 42px !important;
+  padding-right: 42px !important;
+}
+
+.px-lg-40 {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+
+/* Article Title */
+.story-title {
+  color: var(--color-white);
+}
+
+/* Minimal Pagination Styling */
+.stories-pagination .page-link {
+  background: transparent;
+  border: none;
+  color: var(--color-muted);
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  opacity: 0.6;
+  transition: all 0.2s ease-in-out;
+}
+
+.stories-pagination .page-link:hover,
+.stories-pagination .page-link:focus {
+  background: transparent;
+  box-shadow: none;
+  color: var(--color-white);
+  opacity: 1;
+}
+
+.stories-pagination .active .page-link {
+  background-color: var(--color-gray);
+  color: var(--color-dark);
+  opacity: 1;
+  font-weight: 600;
+}
+
+.stories-pagination .prev-btn,
+.stories-pagination .next-btn {
+  font-size: 0.9rem;
+  color: var(--color-white);
+}
+
+@media (max-width: 991px) {
+  .px-sm-16 {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+}

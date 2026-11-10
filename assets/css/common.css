@@ -165,7 +165,6 @@ a:focus-visible, button:focus-visible {
     position: relative;
     width: 100%;
     min-height: 90%;
-    padding: 32px 5% 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -200,7 +199,7 @@ a:focus-visible, button:focus-visible {
 .menu-close {
     position: relative;
     width: 32px;
-    height: 40px;
+    height: 52px;
     padding: 0;
     border: none;
     background: transparent;
@@ -256,33 +255,18 @@ a:focus-visible, button:focus-visible {
     display: none;
 }
 .fullscreen-menu-nav {
-    width: 60%;
-    max-width: 900px;
-    margin: 0 auto 72px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .menu-nav-column {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    gap: 40px;
+    gap: 96px;
 }
 
-/* .menu-nav-column a {
-    color: var(--color-white);
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: 400;
-    transition: opacity 0.3s ease;
-} */
-
-.menu-nav-column a:hover {
-    opacity: 0.55;
+.menu-nav-column-2 {
+    display: flex;
+    gap: 96px;
 }
 
 /* Navigation Animation */
@@ -290,6 +274,8 @@ a:focus-visible, button:focus-visible {
     opacity: 0;
     transform: translateY(10px);
 }
+
+
 
 .fullscreen-menu.is-open .menu-nav-column a {
     animation: menuFadeUp 0.5s ease forwards;
@@ -323,12 +309,9 @@ a:focus-visible, button:focus-visible {
 ========================================= */
 
 .fullscreen-menu-cta {
-    width: 60%;
-    max-width: 900px;
-    margin: 0 auto 32px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    gap: 24px;
 }
 
 .menu-cta-button {
@@ -364,8 +347,6 @@ a:focus-visible, button:focus-visible {
 ========================================= */
 
 .fullscreen-menu-footer {
-    width: 60%;
-    max-width: 900px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -374,9 +355,8 @@ a:focus-visible, button:focus-visible {
 }
 
 .menu-footer-links {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    gap: 38px;
+    
 }
 
 .menu-footer-links a,
@@ -404,10 +384,6 @@ a:focus-visible, button:focus-visible {
 ========================================= */
 
 @media (max-width: 767.98px) {
-
-    .fullscreen-menu {
-        background: var(--color-black);
-    }
 
     .fullscreen-menu-inner {
         min-height: 100%;

@@ -1,38 +1,98 @@
-/* ==========================================================================
+@charset "UTF-8";
+@import "color.css";
+@import "font.css";
+@import "line-height.css";
+@import "margin.css";
+@import "padding.css";
+@import "spacing.css";
+/* =========================================
+   ERUMI ACCESS PAGE
+========================================= */
 
-
-/* --- BACKGROUND  --- */
+/* --- BACKGROUND --- */
 .erumi-access-section {
-  position: relative;
-  width: 100%;
-  box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 /* --- FV RESPONSIVE IMAGE --- */
 .erumi-access-hero-img-wrap {
-  width: 100%;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.erumi-access-hero-img-wrap picture {
+    display: block;
+    width: 100%;
 }
 
 .erumi-access-hero-img {
-  height: clamp(60vh, 10vw, 50vh);
-  object-fit: cover;
-  object-position: center;
-  display: block;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: clamp(360px, 60vh, 750px);
+    object-fit: cover;
+    object-position: center;
 }
 
 /* --- INFO LIST & DIVIDERS --- */
 .erumi-access-info-list {
-  border-color: rgba(247, 244, 238, 0.25) !important;
+    width: 100%;
+    max-width: 100%;
+    border-color: rgba(247, 244, 238, 0.25) !important;
+    box-sizing: border-box;
 }
 
 .erumi-access-info-item {
-  border-color: rgba(247, 244, 238, 0.2) !important;
+    width: 100%;
+    max-width: 100%;
+    border-color: rgba(247, 244, 238, 0.2) !important;
+    box-sizing: border-box;
+}
+
+.erumi-access-info-detail {
+    min-width: 0;
+    overflow-wrap: break-word;
 }
 
 /* --- MAP WRAPPER --- */
 .erumi-access-map-wrap {
-  height: clamp(260px, 35vw, 450px);
-  border: 1px solid rgba(247, 244, 238, 0.15);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: clamp(260px, 35vw, 450px);
+    overflow: hidden;
+    border: 1px solid rgba(247, 244, 238, 0.15);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+}
+
+.erumi-access-map-wrap iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* --- TABLET --- */
+@media (max-width: 991.98px) {
+    .erumi-access-hero-img {
+        height: clamp(350px, 55vh, 600px);
+    }
+}
+
+/* --- MOBILE --- */
+@media (max-width: 767.98px) {
+    .erumi-access-hero-img {
+        height: clamp(300px, 55vh, 480px);
+    }
+
+    .erumi-access-map-wrap {
+        height: 300px;
+    }
 }

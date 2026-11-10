@@ -18,14 +18,12 @@
     <link rel="stylesheet" href="assets/css/spacing.css">
     <link rel="stylesheet" href="assets/css/pages/top.css">  
     <link rel="stylesheet" href="assets/css/pages/access.css"> 
-    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.bundle.min.js">
-    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.js">
-    <link rel="stylesheet" href="assets/js/common.js">
+
 </head>
 <body>
     <!-- header start -->
         <header class="site-header">
-            <div class="position-fixed top-0 start-0 w-100">
+            <div class="position-fixed top-0 start-0 w-100 header-wrapper">
                 <div class="container">
                     <div class="row align-items-center spt-40 spt-lg-24">
 
@@ -66,82 +64,100 @@
             </div>
         </header>
           <!-- Hamburger Menu -->
-            <div class="fullscreen-menu" id="fullscreen-menu" aria-hidden="true">
-                <div class="fullscreen-menu-inner spt-176 spb-24">
-                    <div class="fullscreen-menu-header">
-                        <a href="#" class="fullscreen-menu-logo">
-                            <img src="assets/images/common/erumi-logo.svg" alt="ERUMI">
-                        </a>
-                        <button type="button" class="menu-close" aria-label="Close menu">
-                            <span></span>
-                            <span></span>
-                        </button>
-                    </div>
-                    <nav class="fullscreen-menu-nav lh-1f ols-20" aria-label="Main navigation">
-                        <div class="menu-nav-column ofs-13 ols-200">
-                            <a href="#top">TOP</a>
-                            <a href="#news">お知らせ</a>
-                            
+          <div class="container px-0 mx-0">
+            <div class="row d-flex justify-content-center px-0 mx-0">
+              <div class="col-12 px-0">
+                <div class="fullscreen-menu" id="fullscreen-menu" aria-hidden="true">
+                    <div class="fullscreen-menu-inner spt-176">
+                        <div class="fullscreen-menu-header">
+                            <a href="#" class="fullscreen-menu-logo">
+                                <img src="assets/images/common/erumi-logo.svg" alt="ERUMI">
+                            </a>
+                            <button type="button" class="menu-close" aria-label="Close menu">
+                                <span></span>
+                                <span></span>
+                            </button>
                         </div>
-                        <div class="menu-nav-column d-flex align-items-center ofs-13 ols-200">
-                            <a href="#about">ABOUT</a>
-                            <a href="#access">交通アクセス</a>
-                            
-                        </div>
-                        <div class="menu-nav-column d-flex align-items-center ofs-13 ols-200">
-                            <a href="#stay">ご滞在について</a>
-                            <a href="#faq">よくあるご質問</a>
-                        </div>
-                        <div class="menu-nav-column d-flex align-items-end ofs-13 ols-200">
-                            <a href="#stories">よみもの</a>
-                        </div>
-                    </nav>
-                    <!-- Mobile nav -->
-                    <nav class="mobile-menu-nav lh-1f ols-20" aria-label="Main navigation">
-                        <div class="menu-nav-column ofs-5 ofw-regular lh-2f ols-400">
-                            <a href="#top">TOP</a>
-                            <a href="#about">ABOUT</a>
-                        </div>
-                        <div class="menu-nav-column ofs-5 ofw-regular lh-2f ols-400">
-                            <a href="#stay">ご滞在について</a>
-                            <a href="#stories">よみもの</a>
-                        </div>
-                        <div class="menu-nav-column ofs-5 ofw-regular lh-2f ols-400">
-                            <a href="#news">お知らせ</a>
-                            <a href="#access">交通アクセス</a>
-                            
-                        </div>
-                        <div class="menu-nav-column ofs-5 ofw-regular lh-2f ols-400">
-                            <a href="#faq">よくあるご質問</a>
-                        </div>
-                    </nav>
-                    <div class="fullscreen-menu-cta">
-                        <a href="#contact" class="menu-cta-button ofs-9 ofs-lg-13">お問い合わせ</a>
-                        <a href="#reservation" class="menu-cta-button ofs-9 ofs-lg-13">予約する</a>
-                    </div>
-                    <div class="fullscreen-menu-footer">
-                        <div class="menu-footer-links ofs-3">
-                            <a href="#privacy">プライバシーポリシー</a>
-                            <a href="#cookie">クッキーポリシー</a>
-                            <a href="#terms">宿泊約款</a>
-                        </div>
-                        <div class="menu-language ols-200">
-                            <a href="#">EN</a>
-                            <span>/</span>
-                            <a href="#">JP</a>
+                        <nav class="fullscreen-menu-nav smb-72" aria-label="Main navigation">
+                          <div class="container px-0 mx-0">
+                            <div class="row justify-content-center">
+                              <!-- Left Column -->
+                              <div class="col-12 col-md-10 col-lg-8">
+                                <div class="menu-nav-column ofs-13 ols-200 spb-40">
+                                  <a href="top.html">TOP</a>
+                                  <a href="about.html">ABOUT</a>
+                                  <a href="about_your_stay.html">ご滞在について</a>
+                                  <a href="stories.html">よみもの</a>
+                                </div>
+                              </div>
+                              </div>
+                              <!-- Right Column -->
+                              <div class="row d-flex justify-content-center">
+                              <div class="col-12 col-md-10 col-lg-8">
+                                <div class="menu-nav-column-2 text-start ofs-13 ols-200">
+                                  <a href="news.html">お知らせ</a>
+                                  <a href="access.html">交通アクセス</a>
+                                  <a href="faq.html">よくあるご質問</a>
+                                </div>
+                              </div>
+                              </div>
+                          </div>
+                        </nav>
+                        <!-- Mobile nav -->
+                        <nav class="mobile-menu-nav lh-1f ols-20" aria-label="Main navigation">
+                            <div class="menu-nav-column ofs-5 ofw-regular lh-2f ols-400">
+                                <a href="top.html">TOP</a>
+                                <a href="about.html">ABOUT</a>
+                            </div>
+                            <div class="menu-nav-column ofs-5 ofw-regular lh-2f ols-400">
+                                <a href="about_your_stay.html">ご滞在について</a>
+                                <a href="stories.html">よみもの</a>
+                            </div>
+                            <div class="menu-nav-column ofs-5 ofw-regular lh-2f ols-400">
+                                <a href="news.html">お知らせ</a>
+                                <a href="access.html">交通アクセス</a>
+                            </div>
+                            <div class="menu-nav-column ofs-5 ofw-regular lh-2f ols-400">
+                                <a href="faq.html">よくあるご質問</a>
+                            </div>
+                        </nav>
+
+                        <div class="container px-0">
+                          <div class="row d-flex justify-content-center mx-0">
+                            <div class="col-12 col-md-10 col-lg-8">
+                              <div class="fullscreen-menu-cta smb-32">
+                                  <a href="contact.html" class="menu-cta-button ofs-9 ofs-lg-13">お問い合わせ</a>
+                                  <a href="reservation.html" class="menu-cta-button ofs-9 ofs-lg-13">予約する</a>
+                              </div>
+                              <div class="fullscreen-menu-footer">
+                                    <div class="menu-footer-links d-flex justify-content-between ofs-3">
+                                          <a href="privacy.html">プライバシーポリシー</a>
+                                          <a href="cookie.html">クッキーポリシー</a>
+                                          <a href="terms.html">宿泊約款</a>
+                                    </div>
+                                <div class="menu-language ols-200">
+                                      <a href="#">EN</a>
+                                      <span>/</span>
+                                      <a href="#">JP</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                     </div>
                 </div>
+              </div>
             </div>
+          </div>
           <!-- end of Hamburger Menu -->
           <main id="MainContent">
             <!-- ==========================================
             ACCESS SECTION (Bootstrap-First + Responsive Picture FV)
             ========================================== -->
             <section class="erumi-access-section smt-80">
-              <div class="erumi-access-container container smb-56 smb-lg-40">
-                <div class="row d-flex justify-content-center">
-                  <div class="col-12 col-lg-8">
+              <div class="erumi-access-container container smb-56 smb-lg-40 px-0">
+                <div class="row d-flex justify-content-center mx-0">
+                  <div class="col-12 col-lg-9 px-0">
                     <div class="erumi-access-header text-start">
                       <span class="erumi-access-en-title d-block text-uppercase ofs-lg-13 ols-200 ols-lg-400 lh-1f">ACCESS</span>
                       <h1 class="erumi-access-jp-title m-0 ofs-21 ofs-lg-37 ols-400 lh-1f">交通アクセス</h1>
@@ -154,7 +170,7 @@
             <section>
               <!-- Main Building FV Image with Responsive Picture & srcset -->
               <div class="container-fluid px-0">
-                <div class="row d-flex justify-content-center">
+                <div class="row d-flex justify-content-center mx-0">
                   <div class="col-12 px-0">
                     <div class="erumi-access-hero-img-wrap w-100 shadow omb-14">
                       <picture>
@@ -178,16 +194,16 @@
 
             <section>
               <!-- Access Information -->
-              <div class="container">
-                <div class="row d-flex justify-content-center">
+              <div class="container px-0">
+                <div class="row d-flex justify-content-center mx-0">
                   <div class="col-12 col-lg-8">
-                    <div class="erumi-access-content-wrap">
+                    <div class="erumi-access-content-wrap smb-64">
                       <div class="erumi-access-info-list border-top">
                         <!-- Item 1: 所在地 -->
                         <div class="erumi-access-info-item py-3 py-md-4 d-flex flex-column border-bottom">
                           <h2 class="erumi-access-info-label ofs-13 ols-200 lh-1f m-0 smb-16">所在地</h2>
                           <div class="erumi-access-info-detail">
-                            <p class="mb-0 ols-200 lh-1f">〒678-0231 兵庫県赤穂市坂越718</p>
+                            <p class="mb-0 ols-200 lh-1f">〒678-0221　兵庫県赤穂市尾崎730</p>
                           </div>
                         </div>
     
@@ -203,7 +219,7 @@
                         <div class="erumi-access-info-item py-3 py-md-4 d-flex flex-column border-bottom">
                           <h2 class="erumi-access-info-label ofs-13 ols-200 lh-1f m-0 smb-16">駅からの所要時間・手段</h2>
                           <div class="erumi-access-info-detail">
-                            <p class="mb-0 ols-200 lh-1f">徒歩約22分 / タクシー約5分（1,000〜1,200円）</p>
+                            <p class="mb-0 ols-200 lh-1f">徒歩約25分 / タクシー約5分(1,000～1,200円)</p>
                           </div>
                         </div>
     
@@ -211,7 +227,7 @@
                         <div class="erumi-access-info-item py-3 py-md-4 d-flex flex-column border-bottom">
                           <h2 class="erumi-access-info-label ofs-13 ols-200 lh-1f m-0 smb-16">電車でのアクセス</h2>
                           <div class="erumi-access-info-detail">
-                            <p class="mb-0 ols-200 lh-1f">新大阪駅から新快速・普通車で約1時間30分</p>
+                            <p class="mb-0 ols-200 lh-1f">新大阪から新幹線＋赤穂線で約1時間30分</p>
                           </div>
                         </div>
     
@@ -238,9 +254,9 @@
             </section>
             <section>
             <!-- Google Maps -->
-              <div class="container">
-                <div class="row d-flex justify-content-center">
-                  <div class="col-12 col-lg-8">
+              <div class="container px-0">
+                <div class="row d-flex justify-content-center mx-0">
+                  <div class="col-12 col-lg-8 px-0">
                     <div class="erumi-access-map-wrap w-100 shadow">
                       <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.9547372175965!2d134.4172!3d34.7645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554e7bc5a555555%3A0x0!2z44CSNjc4LTAyMzEgNS03MTgg44GZ44GL44GT44GXLCDntoTluqvluILjgbPjgYvjgoc!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp"
@@ -312,7 +328,8 @@
 
 
 
-
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/common.js"></script>
 </body>
 </html>

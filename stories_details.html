@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>えるみHP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/color.css">
+    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/css/line-height.css">
+    <link rel="stylesheet" href="assets/css/margin.css">
+    <link rel="stylesheet" href="assets/css/padding.css">
+    <link rel="stylesheet" href="assets/css/spacing.css">
+    <link rel="stylesheet" href="assets/css/pages/top.css">  
+    <link rel="stylesheet" href="assets/css/pages/access.css"> 
+    <link rel="stylesheet" href="assets/css/pages/stories.css">
+    <link rel="stylesheet" href="assets/css/pages/stories_details.css">
+
+</head>
+<body>
+    <!-- header start -->
+        <header class="site-header">
+            <div class="position-fixed top-0 start-0 w-100 header-wrapper">
+                <div class="container">
+                    <div class="row align-items-center spt-40 spt-lg-24">
+
+                        <div class="col-auto col-lg-1">
+                            <figure class="m-0">
+                                <img src="assets/images/common/erumi-logo.svg" alt="erumi">
+                            </figure>
+                        </div>
+
+                        <div class="col-lg-7 offset-lg-1 d-none d-lg-block">
+                            <ul class="nav-bar d-flex align-items-center justify-content-between list-unstyled text-white mb-0 flex-nowrap">
+                                <li class="nav-item">TOP</li>
+                                <li class="nav-item">ABOUT</li>
+                                <li class="nav-item">ご滞在について</li>
+                                <li class="nav-item">お食事</li>
+                                <li class="nav-item">交通アクセス</li>
+                                <li class="nav-item">お問い合わせ</li>
+                            </ul>
+                        </div>
+
+                        <div class="col col-lg-3">
+                            <ul class="d-flex align-items-center justify-content-end list-unstyled gap-x-16 gap-xl-x-32 text-body mb-0">
+                                <li class="nav-item text-white">EN/JP</li>
+                                <li class="nav-item">
+                                    <button type="button" class="nav-button bg-white color-black">予約する</button>
+                                </li>
+                                <li class="nav-item">
+                                <button type="button" class="menu-toggle" aria-label="Menu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+          <!-- Hamburger Menu -->
+          <div class="container px-0 mx-0">
+            <div class="row d-flex justify-content-center px-0 mx-0">
+              <div class="col-12 px-0">
+                <div class="fullscreen-menu" id="fullscreen-menu" aria-hidden="true">
+                    <div class="fullscreen-menu-inner spt-176">
+                        <div class="fullscreen-menu-header">
+                            <a href="#" class="fullscreen-menu-logo">
+                                <img src="assets/images/common/erumi-logo.svg" alt="ERUMI">
+                            </a>
+                            <button type="button" class="menu-close" aria-label="Close menu">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <nav class="fullscreen-menu-nav smb-72" aria-label="Main navigation">
+                          <div class="container px-0 mx-0">
+                            <div class="row justify-content-center">
+                              <!-- Left Column -->
+                              <div class="col-12 col-md-10 col-lg-8">
+                                <div class="menu-nav-column ofs-13 ols-200 spb-40">
+                                  <a href="top.html">TOP</a>
+                                  <a href="about.html">ABOUT</a>
+                                  <a href="about_your_stay.html">ご滞在について</a>
+                                  <a href="stories.html">よみもの</a>
+                                </div>
+                              </div>
+                              </div>
+                              <!-- Right Column -->
+                              <div class="row d-flex justify-content-center">
+                              <div class="col-12 col-md-10 col-lg-8">
+                                <div class="menu-nav-column-2 text-start ofs-13 ols-200">
+                                  <a href="news.html">お知らせ</a>
+                                  <a href="access.html">交通アクセス</a>
+                                  <a href="faq.html">よくあるご質問</a>
+                                </div>
+                              </div>
+                              </div>
+                          </div>
+                        </nav>
+                        <!-- Mobile nav -->
+                        <nav class="mobile-menu-nav lh-1f ols-20" aria-label="Main navigation">
+                            <div class="menu-nav-column ofs-5 ofw-regular lh-2f ols-400">
+                                <a href="top.html">TOP</a>
+                                <a href="about.html">ABOUT</a>
+                            </div>
+                            <div class="menu-nav-column ofs-5 ofw-regular lh-2f ols-400">
+                                <a href="about_your_stay.html">ご滞在について</a>
+                                <a href="stories.html">よみもの</a>
+                            </div>
+                            <div class="menu-nav-column ofs-5 ofw-regular lh-2f ols-400">
+                                <a href="news.html">お知らせ</a>
+                                <a href="access.html">交通アクセス</a>
+                            </div>
+                            <div class="menu-nav-column ofs-5 ofw-regular lh-2f ols-400">
+                                <a href="faq.html">よくあるご質問</a>
+                            </div>
+                        </nav>
+
+                        <div class="container px-0">
+                          <div class="row d-flex justify-content-center mx-0">
+                            <div class="col-12 col-md-10 col-lg-8">
+                              <div class="fullscreen-menu-cta smb-32">
+                                  <a href="contact.html" class="menu-cta-button ofs-9 ofs-lg-13">お問い合わせ</a>
+                                  <a href="reservation.html" class="menu-cta-button ofs-9 ofs-lg-13">予約する</a>
+                              </div>
+                              <div class="fullscreen-menu-footer">
+                                    <div class="menu-footer-links d-flex justify-content-between ofs-3">
+                                          <a href="privacy.html">プライバシーポリシー</a>
+                                          <a href="cookie.html">クッキーポリシー</a>
+                                          <a href="terms.html">宿泊約款</a>
+                                    </div>
+                                <div class="menu-language ols-200">
+                                      <a href="#">EN</a>
+                                      <span>/</span>
+                                      <a href="#">JP</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end of Hamburger Menu -->
+          <main id="MainContent">
+            <section>
+              <div class="container smt-80">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-lg-10 col-xl-8">
+                        <!-- Article Header -->
+                        <div class="article-header smb-40">
+                            <time class="article-date d-block ofs-3 ols-200 lh-2 mb-2" datetime="2026-00-00">2026/00/00</time>
+                            <h1 class="article-title ofs-21 ols-300 lh-1f m-0">タイトルが入ります。タイトルが入ります。</h1>
+                        </div>
+
+                        <!-- First Text Block -->
+                        <div class="article-body smb-40">
+                            <p class="article-text ofs-3 ols-200 lh-2f">
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス
+                                トテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ
+                                キストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキスト
+                            </p>
+                        </div>
+
+                        <!-- First Article Image -->
+                        <div class="article-img-wrapper smb-40">
+                            <img src="assets/images/placeholder.jpg" alt="Article image 1" class="img-fluid w-100 article-img" loading="lazy">
+                        </div>
+
+                        <!-- Second Text Block -->
+                        <div class="article-body smb-40">
+                            <p class="article-text ofs-3 ols-200 lh-2f">
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ
+                                キストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                            </p>
+                        </div>
+
+                        <!-- Second Article Image -->
+                        <div class="article-img-wrapper smb-40">
+                            <img src="assets/images/placeholder.jpg" alt="Article image 2" class="img-fluid w-100 article-img" loading="lazy">
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
+
+            <footer class="site-footer py-5">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12 col-lg-10">
+                            <div class="row mb-4 mb-lg-3 nav-section-wrapper spb-56 mx-0">                                                  
+                                <!-- Left Column: Vertical Logo (Centered on mobile, Left-aligned on desktop) -->
+                                <div class="col-12 col-md-3 col-md-gx-1 d-flex justify-content-center justify-content-md-start ps-lg-5 spb-56 spb-lg-0">  
+                                    <figure class="m-0 footer-logo">
+                                        <img src="assets/images/common/erumi-logo.svg" alt="erumi">
+                                    </figure>
+                                </div>
+                                <div class="col-12 col-md-7 footer-nav">
+                                    <!-- Nav Items (Stacked/Centered on Mobile, Row-based Grid on Desktop) -->
+                                <div class="d-flex flex-column flex-lg-row flex-wrap align-items-md-start opb-6 spb-md-48 custom-nav-flex">
+                                        <a href="index.html" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">TOP</a>
+                                        <a href="about.html" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">ABOUT</a>
+                                        <a href="#" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">ご滞在について</a>
+                                        <a href="#" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">よみもの</a>
+                                        <a href="#" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">お知らせ</a>
+                                        <a href="#" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">交通アクセス</a>
+                                        <a href="#" class="link-hover spb-lg-0 ff-mincho lh-1f ols-200 text-white">よくある質問</a>
+                                    </div>
+                                    <div class="d-flex flex-column flex-lg-row justify-content-md-start gap-3">
+                                        <a href="#" class="text-nowrap text-center btn-footer-action bg-white text-black link-hover lh-1f ols-200">お問い合わせ</a>
+                                        <a href="#" class="text-nowrap text-center btn-footer-action bg-white text-black link-hover lh-1f ols-200">予約する</a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="row align-items-start text-md-start">
+                                <div class="col-12 col-md-8">
+                                    <div class="d-flex flex-column flex-md-row justify-content-md-start gap-2 gap-md-4 footer-legal spb-40 spb-md-16 opb-sm-">
+                                        <a href="#" class="ff-mincho ofs-3 lh-1f ols-200 text-white link-hover">プライバシーポリシー</a>
+                                        <a href="#" class="ff-mincho ofs-3 lh-1f ols-200 text-white link-hover">クッキーポリシー</a>
+                                        <a href="#" class="ff-mincho ofs-3 lh-1f ols-200 text-white link-hover">宿泊約款</a>
+                                    </div>
+                                    <div class="ff-mincho ofs-3  lh-1f ols-200 text-white pb-2 pb-lg-0">
+                                        兵庫県赤穂市尾崎730
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 text-md-end ff-mincho ofs-3  lh-1f ols-200 text-white">
+                                    ©2026 ERUMI
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        
+
+
+      
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/stories.js"></script>
+</body>
+</html>
