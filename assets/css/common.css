@@ -460,6 +460,34 @@ a:focus-visible, button:focus-visible {
 
 }
 
+/* THANK YOU BUTTONS */
+
+.thanks-button {
+    padding: 16px 96px;
+    text-decoration: none;
+}
+
+.thanks-button-arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 0 4px 6px;
+    border-color: transparent transparent transparent currentColor;
+}
+
+
+@media (min-width: 992px) {
+    .thanks-button {
+        padding: 16px 0;   
+    }
+}
+
+
+
+
+
+
+
 /* BANNER */
 
 .banner-overlay-content {
