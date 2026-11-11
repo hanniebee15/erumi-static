@@ -1,0 +1,61 @@
+
+
+
+
+/* ==========================================================================
+   Cookie Policy Section Scoped Styles (.p-cookie-policy)
+   ========================================================================== */
+
+.pe-100 {
+    padding-right: 100px !important;
+}
+
+.p-cookie-policy {
+    letter-spacing: 0.04em;
+}
+
+.p-cookie-policy__link {
+    transition: opacity 0.2s ease, border-color 0.2s ease;
+    word-break: break-all;
+}
+
+.p-cookie-policy__link:hover {
+    opacity: 0.75;
+    border-color: #ffffff !important;
+}
+
+/* Exact Table Layout, Minimum Width Protection & Responsive Touch Scrolling */
+.p-cookie-policy__table {
+    min-width: 650px;
+    border-collapse: collapse;
+}
+
+.p-cookie-policy__table th,
+.p-cookie-policy__table td {
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    background-color: transparent !important;
+}
+
+.p-cookie-policy__table th {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.p-cookie-policy .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    /* height: 659px; */
+}
+
+/* Custom scrollbar matching reference layout indicators */
+.p-cookie-policy .table-responsive::-webkit-scrollbar {
+    height: 8px;
+}
+
+.p-cookie-policy .table-responsive::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.p-cookie-policy .table-responsive::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+}

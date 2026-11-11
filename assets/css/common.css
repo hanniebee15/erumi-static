@@ -448,11 +448,6 @@ a:focus-visible, button:focus-visible {
         margin-bottom: 0;
     }
 
-    /* .fullscreen-menu-inner {
-    padding-top: 174px;
-    padding-bottom: 20px;
-    } */
-
     .fullscreen-menu-nav {
         gap: 8px;
     }

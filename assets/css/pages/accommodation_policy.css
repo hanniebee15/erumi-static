@@ -1,0 +1,22 @@
+
+
+
+
+
+.policy-header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.article-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
