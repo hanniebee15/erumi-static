@@ -3,12 +3,15 @@
     bottom: 120px;
 }
 
-.btn-news::after {
+.top-btn::after {
     content: '▶';
     font-size: 8px;
     margin-left: 8px;
 }
 
+.top-about-image-section{
+    z-index: -1 !important;
+}
 
 
 .top-about-section .about-blur-top {
@@ -17,7 +20,7 @@
     left: 0;
     right: 0;
     width: 100%;
-    transform: translateY(-50%); /* Shifts it up by half of its own height */
+    transform: translateY(-50%); 
     pointer-events: none;
     z-index: 1;
     margin: 0;
@@ -30,9 +33,169 @@
     left: 0;
     right: 0;
     width: 100%;
-    transform: translateY(50%) scaleY(-1); /* Shifts down by 50% and flips upward */
+    transform: translateY(50%) scaleY(-1); 
     pointer-events: none;
     z-index: 1;
     margin: 0;
     padding: 0;
 }
+
+.vertical-text {
+    writing-mode: vertical-rl;
+}
+
+
+.top-gallery-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.right-image-section,
+.left-image-section {
+    position: relative !important;
+    width: 100%;
+    top: auto !important;
+    right: auto !important;
+    left: auto !important;
+}
+
+.right-image-section-wrapper,
+.left-image-section-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.right-image-section-wrapper .image-01 {
+    width: 193px;
+    height: 129px;
+    margin-left: auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.right-image-section-wrapper .image-02 {
+    width: 155px;
+    height: 103px;
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: 151px;    
+    display: block;
+    position: relative;
+    z-index: 2;
+    object-fit: cover;
+}
+
+.left-image-section-wrapper .image-01 {
+    width: 275px;
+    height: 183px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.left-image-section-wrapper .image-02 {
+    width: 176px;
+    height: 117px;
+    margin-top: -20px;
+    margin-left: 169px;    
+    display: block;
+    position: relative;
+    z-index: 2;
+    object-fit: cover;
+}
+
+
+@media (min-width: 992px) {
+    .top-gallery-wrapper {
+        min-height: 520px;
+        height: 100%;
+    }
+
+    .right-image-section {
+        position: absolute;
+        top: 0;
+        right: 0 ;
+        left: auto;
+    }
+
+    .right-image-section-wrapper .image-01 {
+        width: 380px;
+        height: 253px;
+    }
+
+    .right-image-section-wrapper .image-02 {
+        width: 306px;
+        height: 203px;
+        margin-top: -40px;
+        margin-right: 292px; 
+    }
+
+    .left-image-section {
+        position: absolute ;
+        left: 0;
+        margin-top: -203px !important;
+       
+    }
+
+    .left-image-section-wrapper .image-01 {
+        width: 476px;
+        height: 317px;
+    }
+
+    .left-image-section-wrapper .image-02 {
+        width: 306px;
+        height: 203px;
+        margin-top: -40px;
+        margin-left: 292px; 
+    }
+}
+
+.stay-content-section{
+    margin-left: auto;
+}
+
+
+.about-your-stay-img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+}
+
+
+
+
+.related-story-image-wrapper {
+  aspect-ratio: 16 / 10;
+  background-color: var(--color-gray);
+}
+ 
+.related-story-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.custom-stories-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 79px; 
+}
+
+.custom-stories-row .story-col {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .custom-stories-row .story-col {
+        width: calc((100% - (79px * 2)) / 3);
+    }
+}
+
+
+
