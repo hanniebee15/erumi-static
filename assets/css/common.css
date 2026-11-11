@@ -44,7 +44,7 @@ a:focus-visible, button:focus-visible {
 }
 
 /* ヘッダー・フッター・パンくず・共通ボタン等はここから実装してください。 */
-/* header */
+/* HEADER */
 .site-header .header-wrapper {
     z-index: 1000 !important;
 }
@@ -121,6 +121,7 @@ a:focus-visible, button:focus-visible {
         text-indent: 0.2em;
     }
 }
+
 
 /* breadcrumb */
 .breadcrumb-list a {
@@ -453,6 +454,34 @@ a:focus-visible, button:focus-visible {
     }
 
 }
+
+/* THANK YOU BUTTONS */
+
+.thanks-button {
+    padding: 16px 96px;
+    text-decoration: none;
+}
+
+.thanks-button-arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 0 4px 6px;
+    border-color: transparent transparent transparent currentColor;
+}
+
+
+@media (min-width: 992px) {
+    .thanks-button {
+        padding: 16px 0;   
+    }
+}
+
+
+
+
+
+
 
 /* BANNER */
 

@@ -1,27 +1,5 @@
-/* ==========================================================
-   NEWS-DETAIL (mobile-first: base = SP, min-width: 992px = PC)
-   Spacing / font-size / letter-spacing utilities (spt-*, ofs-*, ols-*, lh-*)
-   are assumed to exist already in your utility CSS.
-   ========================================================== */
-
-.news-detail-section {
-    color: #fff;
-}
-
-/* ---------- Article ---------- */
-.news-detail-title {
-    font-family: "Shippori Mincho", serif;
-    word-break: break-all;
-}
-
-.news-detail-text {
-    font-family: "Shippori Mincho", serif;
-    text-align: justify;
-}
-
-/* ---------- Image (3:2 on both SP and PC) ---------- */
+/* NEWS DETAIL */
 .news-detail-placeholder {
-    aspect-ratio: 3 / 2;
     overflow: hidden;
 }
 
@@ -31,46 +9,41 @@
     object-fit: cover;
 }
 
-/* ---------- Prev / Next navigation ---------- */
 .news-detail-nav-link {
-    color: inherit;
     text-decoration: none;
 }
 
-.news-detail-nav-chevron {
-    width: 6px;
-    height: 6px;
-    border-color: var(--color-white);
+
+.news-detail-nav-prev::before,
+.news-detail-nav-next::after {
+    content: "";
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    border: solid currentColor;
+    border-width: 1px 1px 0 0;
 }
 
-/* chevron drawn from the top/right borders, rotated into < and > */
-.news-detail-nav-chevron-prev {
-    transform: translateX(1px) rotate(-135deg);
-}
+.news-detail-nav-prev::before { 
+    transform: translateX(2px) rotate(-135deg); 
+}  
 
-.news-detail-nav-chevron-next {
-    transform: translateX(-1px) rotate(45deg);
-}
+.news-detail-nav-next::after  { 
+    transform: translateX(-2px) rotate(45deg); 
+}   
 
-/* ---------- Back to list ---------- */
+
 .news-detail-back-link {
-    color: inherit;
+    --triangle-size: 4px;
     text-decoration: none;
 }
 
-.news-detail-back-arrow {
-    font-size: 0.7em;
-    line-height: 1;
+.news-detail-back-link::after {
+    content: "";
+    flex-shrink: 0;
+    border-style: solid;
+    border-width: var(--triangle-size) 0 var(--triangle-size) calc(var(--triangle-size) * 1.6);
+    border-color: transparent transparent transparent currentColor;
 }
 
-/* ---------- PC ---------- */
-@media (min-width: 992px) {
-    .news-detail-text {
-        text-align: left;
-    }
 
-    .news-detail-nav-chevron {
-        width: 0.625rem;
-        height: 0.625rem;
-    }
-}
