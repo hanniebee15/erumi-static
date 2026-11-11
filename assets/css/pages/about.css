@@ -1,28 +1,14 @@
 /* ABOUT FV*/
 
 .about-fv-image {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
- 
- 
-.about-description {
-    padding-bottom: 80px;
-}
- 
-.about-description p {
-    margin: 0 0 1.5em;
-}
- 
-.about-description p:last-child {
-    margin-bottom: 0;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
  
  
 @media screen and (min-width: 992px) {
-
     .about-description {
         padding-bottom: 275px;
     }
