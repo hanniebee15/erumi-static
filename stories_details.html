@@ -25,17 +25,19 @@
 <body>
     <!-- header start -->
     <header class="site-header">
-        <div class="position-fixed top-0 start-0 w-100 header-wrapper">
-            <div class="container">
+        <div class="position-fixed top-0 start-0 w-100 header-wrapper">   
+               
+            <div class="container position-relative">
+                
                 <div class="row align-items-center spt-40 spt-lg-24">
 
                     <div class="col-auto col-lg-1 header-logo">
-                        <figure class="m-0">
+                        <a href="index.html" class="m-0 link-hover">
                             <img src="assets/images/common/erumi-logo.svg" alt="erumi">
-                        </figure>
+                        </a>
                     </div>
 
-                    <div class="col-lg-7 offset-lg-1 d-none d-lg-block header-nav">
+                    <div class="col-lg-8 d-none d-lg-block header-nav">
                         <ul class="nav-bar d-flex align-items-center justify-content-between list-unstyled ofs-5 ofs-lg-3 ofs-xl-4 ofs-xxl-5 ols-200 ols-lg-50 ols-xl-100 ols-xxl-200 lh-2 column-gap-xl-2 column-gap-xxl-3 text-white mb-0 flex-nowrap">
                             <li class="nav-item link-hover"><a href="index.html">TOP</a></li>
                             <li class="nav-item link-hover"><a href="about.html">ABOUT</a></li>
@@ -48,7 +50,7 @@
                     </div>
 
                     <div class="col col-lg-3 header-actions">
-                        <ul class="d-flex align-items-center justify-content-end list-unstyled column-gap-3 column-gap-xxl-4 text-body mb-0">
+                        <ul class="d-flex align-items-center justify-content-end justify-content-lg-between list-unstyled column-gap-3 column-gap-xxl-4 text-body mb-0">
                             <li class="nav-item ofs-5 ofs-lg-3 ofs-xl-4 ofs-xxl-5 ols-200 ols-lg-50 ols-xl-100 ols-xxl-200 lh-2 text-white">EN/JP</li>
                             <li class="nav-item">
                                 <button type="button" class="nav-button ofs-5 ofs-lg-3 ofs-xl-4 ofs-xxl-5 ols-200 ols-lg-50 ols-xl-100 ols-xxl-200 lh-2 bg-white text-black">予約する</button>
@@ -65,24 +67,11 @@
             </div>
         </div>
     </header>
-        <!-- Breadcrumb -->
-        <nav class="breadcrumb-section spt-152 spt-lg-128" aria-label="breadcrumb">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12">
-                        <ol class="breadcrumb-list d-flex align-items-center list-unstyled ff-shippori-mincho ofw-regular ofs-5 ols-40 lh-2 text-white m-0">
-                            <li><a href="index.html">TOP</a></li>
-                            <li><a href="stories.html">よみもの</a></li>
-                            <li aria-current="page">タイトルが入ります。タイトルが入ります。</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </nav>        
-            <!-- Hamburger Menu -->
-            <div class="container px-0 mx-0">
-            <div class="row d-flex justify-content-center px-0 mx-0">
-                <div class="col-12 px-0">
+
+     <!-- Hamburger Menu -->
+    <div class="container px-0 mx-0">
+        <div class="row d-flex justify-content-center px-0 mx-0">
+            <div class="col-12 px-0">
                 <div class="fullscreen-menu" id="fullscreen-menu" aria-hidden="true">
                     <div class="fullscreen-menu-inner spt-176">
                         <div class="fullscreen-menu-header">
@@ -100,7 +89,7 @@
                                 <!-- Left Column -->
                                 <div class="col-12 col-md-10 col-lg-8">
                                 <div class="menu-nav-column ofs-13 ols-200 spb-40">
-                                    <a href="top.html">TOP</a>
+                                    <a href="index.html">TOP</a>
                                     <a href="about.html">ABOUT</a>
                                     <a href="about_your_stay.html">ご滞在について</a>
                                     <a href="stories.html">よみもの</a>
@@ -122,7 +111,7 @@
                         <!-- Mobile nav -->
                         <nav class="mobile-menu-nav lh-1f ols-20" aria-label="Main navigation">
                             <div class="menu-nav-column ofs-5 ofw-regular lh-2f ols-400">
-                                <a href="top.html">TOP</a>
+                                <a href="index.html">TOP</a>
                                 <a href="about.html">ABOUT</a>
                             </div>
                             <div class="menu-nav-column ofs-5 ofw-regular lh-2f ols-400">
@@ -140,229 +129,243 @@
 
                         <div class="container px-0">
                             <div class="row d-flex justify-content-center mx-0">
-                            <div class="col-12 col-md-10 col-lg-8">
-                                <div class="fullscreen-menu-cta smb-32">
-                                    <a href="contact.html" class="menu-cta-button ofs-9 ofs-lg-13">お問い合わせ</a>
-                                    <a href="reservation.html" class="menu-cta-button ofs-9 ofs-lg-13">予約する</a>
-                                </div>
-                                <div class="fullscreen-menu-footer">
-                                    <div class="menu-footer-links d-flex justify-content-between ofs-3">
-                                            <a href="privacy.html">プライバシーポリシー</a>
-                                            <a href="cookie.html">クッキーポリシー</a>
-                                            <a href="terms.html">宿泊約款</a>
+                                <div class="col-12 col-md-10 col-lg-8">
+                                    <div class="fullscreen-menu-cta smb-32">
+                                        <a href="contact.html" class="menu-cta-button ofs-9 ofs-lg-13">お問い合わせ</a>
+                                        <a href="reservation.html" class="menu-cta-button ofs-9 ofs-lg-13">予約する</a>
                                     </div>
-                                <div class="menu-language ols-200">
+                                    <div class="fullscreen-menu-footer">
+                                        <div class="menu-footer-links d-flex justify-content-between ofs-3">
+                                                <a href="privacy.html">プライバシーポリシー</a>
+                                                <a href="cookie.html">クッキーポリシー</a>
+                                                <a href="terms.html">宿泊約款</a>
+                                        </div>
+                                    <div class="menu-language ols-200">
                                         <a href="#">EN</a>
                                         <span>/</span>
                                         <a href="#">JP</a>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
-            <!-- end of Hamburger Menu -->
-            <main id="MainContent">
-            <section class="stories-section smt-80 smb-120">
-                <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-lg-10 col-xl-8">
-                        <!-- Article Header -->
-                        <div class="article-header smb-40">
-                            <time class="article-date d-block ofs-3 ols-200 lh-2 mb-2" datetime="2026-00-00">2026/00/00</time>
-                            <h1 class="article-title ofs-21 ols-300 lh-1f m-0">タイトルが入ります。タイトルが入ります。</h1>
-                        </div>
-
-                        <!-- First Text Block -->
-                        <div class="article-body smb-40">
-                            <p class="article-text ofs-3 ols-200 lh-2f">
-                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス
-                                トテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ
-                                キストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                テキストテキストテキストテキストテキストテキストテキスト
-                            </p>
-                        </div>
-
-                        <!-- First Article Image -->
-                        <div class="article-img-wrapper smb-40">
-                            <img src="assets/images/placeholder.jpg" alt="Article image 1" class="img-fluid w-100 article-img" loading="lazy">
-                        </div>
-
-                        <!-- Second Text Block -->
-                        <div class="article-body smb-40">
-                            <p class="article-text ofs-3 ols-200 lh-2f">
-                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ
-                                キストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                            </p>
-                        </div>
-
-                        <!-- Second Article Image -->
-                        <div class="article-img-wrapper">
-                            <img src="assets/images/placeholder.jpg" alt="Article image 2" class="img-fluid w-100 article-img" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </section>
-
-            <!-- Other Stories / Related Articles Section -->
-            <section class="related-stories-section smt-120 smb-120">
-                <div class="container">
-                <!-- Section Heading -->
-                    <div class="row d-flex justify-content-center smb-lg-32 smb-40">
-                        <div class="col-12">
-                            <h2 class="related-stories-title m-0">その他の記事</h2>
-                        </div>
-                    </div>
-
-                <!-- Related Articles Grid Row -->
-                <div class="row g-4 g-lg-5">
-                <!-- Related Article Card 1 -->
-                    <div class="col-12 col-md-4">
-                        <article class="h-100">
-                            <a href="stories_detail.html" class="related-story-card d-flex flex-column h-100 text-decoration-none">
-                                <div class="related-story-image-wrapper overflow-hidden mb-2">
-                                    <img src="assets/images/placeholder.jpg" alt="その他の記事タイトル" class="related-story-image img-fluid w-100" loading="lazy" />
-                                </div>
-                                <div class="related-story-date ofs-3 ols-200 lh-2 mb-2">2025.12.26</div>
-                                    <h3 class="related-story-title ofs-5 ols-200 lh-1f m-0">タイトルタイトルタイトルタイトルタイトルタイトル</h3>
-                            </a>
-                        </article>
-                    </div>
-
-                <!-- Related Article Card 2 -->
-                    <div class="col-12 col-md-4">
-                        <article class="h-100">
-                            <a href="stories_detail.html" class="related-story-card d-flex flex-column h-100 text-decoration-none">
-                                <div class="related-story-image-wrapper overflow-hidden mb-2">
-                                    <img src="assets/images/placeholder.jpg" alt="その他の記事タイトル" class="related-story-image img-fluid w-100" loading="lazy" />
-                                </div>
-                                <div class="related-story-date ofs-3 ols-200 lh-2 mb-2">2025.12.26</div>
-                                    <h3 class="related-story-title ofs-5 ols-200 lh-1f m-0">タイトルタイトルタイトルタイトルタイトルタイトル</h3>
-                            </a>
-                        </article>
-                    </div>
-
-                <!-- Related Article Card 3 -->
-                    <div class="col-12 col-md-4">
-                        <article class="h-100">
-                            <a href="stories_detail.html" class="related-story-card d-flex flex-column h-100 text-decoration-none">
-                                <div class="related-story-image-wrapper overflow-hidden mb-2">
-                                    <img src="assets/images/placeholder.jpg" alt="その他の記事タイトル" class="related-story-image img-fluid w-100" loading="lazy" />
-                                </div>
-                                <div class="related-story-date ofs-3 ols-200 lh-2 mb-2">2025.12.26</div>
-                                    <h3 class="related-story-title ofs-5 ols-200 lh-1f m-0">タイトルタイトルタイトルタイトルタイトルタイトル</h3>
-                            </a>
-                        </article>
-                    </div>
-                <!-- View All Link Row -->
-                <div class="row mt-5">
-                <div class="col-12 text-center">
-                    <a href="stories.html" class="related-stories-more d-inline-block text-decoration-none">
-                    すべて見る ►
-                    </a>
-                </div>
-                </div>
-            </div>
-            </section>
-
-                <section class="banner-section position-relative">
-                    <div class="container-fluid px-0">
-
-                        <div class="row mx-0">
-                            <div class="col-12 px-0 position-relative">
-                                
-                                <picture>
-                                    <source media="(min-width:768px)"
-                                            srcset="assets/images/common/banner_background_pc.jpg">
-                                    <img src="assets/images/common/banner_background_sp.jpg"
-                                        alt="Traditional Japanese interior"
-                                        class="d-block w-100 h-100 banner-img"
-                                        fetchpriority="high">
-                                </picture>
-                                
-                                <div class="row mx-0">
-                                    <div class="col-12 px-0">
-                                        <div class="banner-overlay-content text-center text-white mx-0">
-                                            <h1 class="ofs-21 ofs-lg-29 ols-300 lh-1f text-white spb-16 m-0">ご 予 約</h1>      
-                                            <p class="hero-description ofs-5 ols-200 lh-1f text-white spb-32 spb-lg-40 m-0">
-                                                えるみのご予約はこちらの <br class="d-md-none">
-                                                フォームからのみ<br class="d-none d-md-block"> 承っております。  
-                                            </p>                        
-                                            <div class="btn-reservation-wrapper">
-                                                <a href="#" class="btn-reservation ff-mincho ofs-3 ols-200 lh-1f text-white link-hover">予約する</a>
-                                            </div>
-                                        </div>
                                     </div>
-                                </div>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Hamburger Menu -->
 
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb-section spt-152 spt-lg-128" aria-label="breadcrumb">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <ol class="breadcrumb-list d-flex align-items-center list-unstyled ff-shippori-mincho ofw-regular ofs-5 ols-40 lh-2 text-white m-0">
+                        <li><a href="index.html">TOP</a></li>
+                        <li><a href="stories.html">よみもの</a></li>
+                        <li aria-current="page">タイトルが入ります。タイトルが入ります。</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </nav>    
+
+    <main id="MainContent">
+    <section class="stories-section smt-80 smb-120">
+        <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-8">
+                <!-- Article Header -->
+                <div class="article-header smb-40">
+                    <time class="article-date d-block ofs-3 ols-200 lh-2 mb-2" datetime="2026-00-00">2026/00/00</time>
+                    <h1 class="article-title ofs-21 ols-300 lh-1f m-0">タイトルが入ります。タイトルが入ります。</h1>
+                </div>
+
+                <!-- First Text Block -->
+                <div class="article-body smb-40">
+                    <p class="article-text ofs-3 ols-200 lh-2f">
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス
+                        トテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ
+                        キストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                </div>
+
+                <!-- First Article Image -->
+                <div class="article-img-wrapper smb-40">
+                    <img src="assets/images/placeholder.jpg" alt="Article image 1" class="img-fluid w-100 article-img" loading="lazy">
+                </div>
+
+                <!-- Second Text Block -->
+                <div class="article-body smb-40">
+                    <p class="article-text ofs-3 ols-200 lh-2f">
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ
+                        キストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                </div>
+
+                <!-- Second Article Image -->
+                <div class="article-img-wrapper">
+                    <img src="assets/images/placeholder.jpg" alt="Article image 2" class="img-fluid w-100 article-img" loading="lazy">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Other Stories / Related Articles Section -->
+    <section class="related-stories-section smt-120 smb-120">
+        <div class="container">
+        <!-- Section Heading -->
+            <div class="row d-flex justify-content-center smb-lg-32 smb-40">
+                <div class="col-12">
+                    <h2 class="related-stories-title m-0">その他の記事</h2>
+                </div>
+            </div>
+
+        <!-- Related Articles Grid Row -->
+        <div class="row g-4 g-lg-5">
+        <!-- Related Article Card 1 -->
+            <div class="col-12 col-md-4">
+                <article class="h-100">
+                    <a href="stories_detail.html" class="related-story-card d-flex flex-column h-100 text-decoration-none">
+                        <div class="related-story-image-wrapper overflow-hidden mb-2">
+                            <img src="assets/images/placeholder.jpg" alt="その他の記事タイトル" class="related-story-image img-fluid w-100" loading="lazy" />
+                        </div>
+                        <div class="related-story-date ofs-3 ols-200 lh-2 mb-2">2025.12.26</div>
+                            <h3 class="related-story-title ofs-5 ols-200 lh-1f m-0">タイトルタイトルタイトルタイトルタイトルタイトル</h3>
+                    </a>
+                </article>
+            </div>
+
+        <!-- Related Article Card 2 -->
+            <div class="col-12 col-md-4">
+                <article class="h-100">
+                    <a href="stories_detail.html" class="related-story-card d-flex flex-column h-100 text-decoration-none">
+                        <div class="related-story-image-wrapper overflow-hidden mb-2">
+                            <img src="assets/images/placeholder.jpg" alt="その他の記事タイトル" class="related-story-image img-fluid w-100" loading="lazy" />
+                        </div>
+                        <div class="related-story-date ofs-3 ols-200 lh-2 mb-2">2025.12.26</div>
+                            <h3 class="related-story-title ofs-5 ols-200 lh-1f m-0">タイトルタイトルタイトルタイトルタイトルタイトル</h3>
+                    </a>
+                </article>
+            </div>
+
+        <!-- Related Article Card 3 -->
+            <div class="col-12 col-md-4">
+                <article class="h-100">
+                    <a href="stories_detail.html" class="related-story-card d-flex flex-column h-100 text-decoration-none">
+                        <div class="related-story-image-wrapper overflow-hidden mb-2">
+                            <img src="assets/images/placeholder.jpg" alt="その他の記事タイトル" class="related-story-image img-fluid w-100" loading="lazy" />
+                        </div>
+                        <div class="related-story-date ofs-3 ols-200 lh-2 mb-2">2025.12.26</div>
+                            <h3 class="related-story-title ofs-5 ols-200 lh-1f m-0">タイトルタイトルタイトルタイトルタイトルタイトル</h3>
+                    </a>
+                </article>
+            </div>
+        <!-- View All Link Row -->
+        <div class="row mt-5">
+        <div class="col-12 text-center">
+            <a href="stories.html" class="related-stories-more d-inline-block text-decoration-none">
+            すべて見る ►
+            </a>
+        </div>
+        </div>
+    </div>
+    </section>
+
+        <section class="banner-section position-relative">
+            <div class="container-fluid px-0">
+
+                <div class="row mx-0">
+                    <div class="col-12 px-0 position-relative">
+                        
+                        <picture>
+                            <source media="(min-width:768px)"
+                                    srcset="assets/images/common/banner_background_pc.jpg">
+                            <img src="assets/images/common/banner_background_sp.jpg"
+                                alt="Traditional Japanese interior"
+                                class="d-block w-100 h-100 banner-img"
+                                fetchpriority="high">
+                        </picture>
+                        
+                        <div class="row mx-0">
+                            <div class="col-12 px-0">
+                                <div class="banner-overlay-content text-center text-white mx-0">
+                                    <h1 class="ofs-21 ofs-lg-29 ols-300 lh-1f text-white spb-16 m-0">ご 予 約</h1>      
+                                    <p class="hero-description ofs-5 ols-200 lh-1f text-white spb-32 spb-lg-40 m-0">
+                                        えるみのご予約はこちらの <br class="d-md-none">
+                                        フォームからのみ<br class="d-none d-md-block"> 承っております。  
+                                    </p>                        
+                                    <div class="btn-reservation-wrapper">
+                                        <a href="#" class="btn-reservation ff-mincho ofs-3 ols-200 lh-1f text-white link-hover">予約する</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>   
 
                     </div>
-                </section>            
-            </main>
+                </div>   
 
-            <footer class="site-footer py-5">
-                <div class="container">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-12 col-lg-10">
-                            <div class="row mb-4 mb-lg-3 nav-section-wrapper spb-56 mx-0">                                                  
-                                <!-- Left Column: Vertical Logo (Centered on mobile, Left-aligned on desktop) -->
-                                <div class="col-12 col-md-3 col-md-gx-1 d-flex justify-content-center justify-content-md-start ps-lg-5 spb-56 spb-lg-0">  
-                                    <figure class="m-0 footer-logo">
-                                        <img src="assets/images/common/erumi-logo.svg" alt="erumi">
-                                    </figure>
-                                </div>
-                                <div class="col-12 col-md-7 footer-nav">
-                                    <!-- Nav Items (Stacked/Centered on Mobile, Row-based Grid on Desktop) -->
-                                <div class="d-flex flex-column flex-lg-row flex-wrap align-items-md-start opb-6 spb-md-48 custom-nav-flex">
-                                        <a href="index.html" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">TOP</a>
-                                        <a href="about.html" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">ABOUT</a>
-                                        <a href="#" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">ご滞在について</a>
-                                        <a href="#" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">よみもの</a>
-                                        <a href="#" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">お知らせ</a>
-                                        <a href="#" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">交通アクセス</a>
-                                        <a href="#" class="link-hover spb-lg-0 ff-mincho lh-1f ols-200 text-white">よくある質問</a>
-                                    </div>
-                                    <div class="d-flex flex-column flex-lg-row justify-content-md-start gap-3">
-                                        <a href="#" class="text-nowrap text-center btn-footer-action bg-white text-black link-hover lh-1f ols-200">お問い合わせ</a>
-                                        <a href="#" class="text-nowrap text-center btn-footer-action bg-white text-black link-hover lh-1f ols-200">予約する</a>
-                                    </div>
-                                </div>
+            </div>
+        </section>            
+    </main>
+
+    <footer class="site-footer py-5">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="row mb-4 mb-lg-3 nav-section-wrapper spb-56 mx-0">                                                  
+                        <!-- Left Column: Vertical Logo (Centered on mobile, Left-aligned on desktop) -->
+                        <div class="col-12 col-md-3 col-md-gx-1 d-flex justify-content-center justify-content-md-start ps-lg-5 spb-56 spb-lg-0">  
+                            <figure class="m-0 footer-logo">
+                                <img src="assets/images/common/erumi-logo.svg" alt="erumi">
+                            </figure>
+                        </div>
+                        <div class="col-12 col-md-7 footer-nav">
+                            <!-- Nav Items (Stacked/Centered on Mobile, Row-based Grid on Desktop) -->
+                        <div class="d-flex flex-column flex-lg-row flex-wrap align-items-md-start opb-6 spb-md-48 custom-nav-flex">
+                                <a href="index.html" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">TOP</a>
+                                <a href="about.html" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">ABOUT</a>
+                                <a href="#" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">ご滞在について</a>
+                                <a href="#" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">よみもの</a>
+                                <a href="#" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">お知らせ</a>
+                                <a href="#" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">交通アクセス</a>
+                                <a href="#" class="link-hover spb-lg-0 ff-mincho lh-1f ols-200 text-white">よくある質問</a>
                             </div>
-    
-                            <div class="row align-items-start text-md-start">
-                                <div class="col-12 col-md-8">
-                                    <div class="d-flex flex-column flex-md-row justify-content-md-start gap-2 gap-md-4 footer-legal spb-40 spb-md-16 opb-sm-">
-                                        <a href="#" class="ff-mincho ofs-3 lh-1f ols-200 text-white link-hover">プライバシーポリシー</a>
-                                        <a href="#" class="ff-mincho ofs-3 lh-1f ols-200 text-white link-hover">クッキーポリシー</a>
-                                        <a href="#" class="ff-mincho ofs-3 lh-1f ols-200 text-white link-hover">宿泊約款</a>
-                                    </div>
-                                    <div class="ff-mincho ofs-3  lh-1f ols-200 text-white pb-2 pb-lg-0">
-                                        兵庫県赤穂市尾崎730
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-4 text-md-end ff-mincho ofs-3  lh-1f ols-200 text-white">
-                                    ©2026 ERUMI
-                                </div>
+                            <div class="d-flex flex-column flex-lg-row justify-content-md-start gap-3">
+                                <a href="#" class="text-nowrap text-center btn-footer-action bg-white text-black link-hover lh-1f ols-200">お問い合わせ</a>
+                                <a href="#" class="text-nowrap text-center btn-footer-action bg-white text-black link-hover lh-1f ols-200">予約する</a>
                             </div>
                         </div>
                     </div>
+
+                    <div class="row align-items-start text-md-start">
+                        <div class="col-12 col-md-8">
+                            <div class="d-flex flex-column flex-md-row justify-content-md-start gap-2 gap-md-4 footer-legal spb-40 spb-md-16 opb-sm-">
+                                <a href="#" class="ff-mincho ofs-3 lh-1f ols-200 text-white link-hover">プライバシーポリシー</a>
+                                <a href="#" class="ff-mincho ofs-3 lh-1f ols-200 text-white link-hover">クッキーポリシー</a>
+                                <a href="#" class="ff-mincho ofs-3 lh-1f ols-200 text-white link-hover">宿泊約款</a>
+                            </div>
+                            <div class="ff-mincho ofs-3  lh-1f ols-200 text-white pb-2 pb-lg-0">
+                                兵庫県赤穂市尾崎730
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 text-md-end ff-mincho ofs-3  lh-1f ols-200 text-white">
+                            ©2026 ERUMI
+                        </div>
+                    </div>
                 </div>
-            </footer>
+            </div>
+        </div>
+    </footer>
         
-
-
-      
+    
     <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/common.js"></script>

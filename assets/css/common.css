@@ -49,6 +49,35 @@ a:focus-visible, button:focus-visible {
     z-index: 1000 !important;
 }
 
+/* Mobile (base) */
+.site-header .header-wrapper {
+    overflow-x: clip;               
+}
+
+.site-header .header-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0 -30px;                
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.7); 
+    filter: blur(18px);             
+    border-radius: 40px;
+}
+
+@media (min-width: 992px) {
+    .site-header .header-wrapper {
+        overflow-x: visible;
+    }
+
+    .site-header .header-wrapper::before {
+        .site-header .header-wrapper::before {
+            inset: 0 0 auto 0;                  /* top, right, left = 0; height set below */
+            height: 100%;
+            background: url("../images/common/header_bg_black_pc.png") center top / 100% auto no-repeat;
+        }
+    }
+}
+
 .nav-item {
     white-space: nowrap;
 }
@@ -94,32 +123,6 @@ a:focus-visible, button:focus-visible {
 
 .nav-bar {
     column-gap: 8px;
-}
-
-
-@media (min-width: 992px) {
-    .site-header .nav-button {
-        width: 92px;
-        height: 40px;
-        text-indent: 0.05em;
-    }
-}
-
-
-@media (min-width: 1200px) {
-    .site-header .nav-button {
-        width: 104px;
-        height: 42px;
-        text-indent: 0.1em;
-    }
-}
-
-@media (min-width: 1400px) {
-    .site-header .nav-button {
-        width: 118px;
-        height: 45px;
-        text-indent: 0.2em;
-    }
 }
 
 
@@ -479,10 +482,6 @@ a:focus-visible, button:focus-visible {
 
 
 
-
-
-
-
 /* BANNER */
 
 .banner-overlay-content {
@@ -540,15 +539,10 @@ a:focus-visible, button:focus-visible {
 }
  
 .footer-nav{
-    padding: 0px 40px;
+    padding: 0px 28px;
 }
  
-.font-cinzel {
-font-family: 'Cinzel', serif;
-letter-spacing: 0.25em;
-}
  
-/* Minimal White Action Buttons */
 .btn-footer-action {
     padding: 16px 0px;
 }
@@ -560,11 +554,13 @@ letter-spacing: 0.25em;
     }
  
     .custom-nav-flex {
-        gap: 24px 56px; 
+        gap: 24px 56px;
     }
  
     .btn-footer-action {
-        padding: 16px 77px;
+        padding: 16px;
+        width: 266px;
+        
     }
 }
 
