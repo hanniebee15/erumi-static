@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="assets/css/pages/cookie_policy.css">
     <link rel="stylesheet" href="assets/css/pages/accommodation_policy.css">
     <link rel="stylesheet" href="assets/css/pages/contact.css">
+    <link rel="stylesheet" href="assets/css/pages/reservation.css">
     
 
 </head>
@@ -171,122 +172,158 @@
             <!-- end of Hamburger Menu -->
             
             <main id="MainContent">
-<section class="reservation-section position-relative py-5">
-    <!-- Header Section -->
-    <div class="container smt-80 smb-80">
-        <div class="row d-flex justify-content-center">
-            <div class="col-12 col-lg-10">
-                <div class="reservation-header-wrapper">
-                    <span class="ofs-13 ols-200 lh-1f text-white d-block mb-2">Reservation</span>
-                    <h1 class="ofw-regular ofs-21 ofs-lg-37 ols-400 lh-1f mb-0 text-white">
-                        ご予約フォーム
-                    </h1>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Main Content & Form -->
-    <div class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="col-12 col-lg-10">
-                <!-- Description -->
-                <p class="reservation-description text-white mb-5">
-                    ご質問やご相談がございましたら、以下のフォームに必要事項を入力しお気軽にお問い合わせください。
-                </p>
-
-                <!-- Reservation Form -->
-                <form action="#" method="POST" class="reservation-form">
-                    
-                    <!-- 1. お名前 -->
-                    <div class="mb-4">
-                        <label for="reservation-name" class="form-label text-white d-flex align-items-center mb-2">
-                            <span>お名前</span>
-                            <span class="badge reservation-badge ms-2">必須</span>
-                        </label>
-                        <input type="text" class="form-control reservation-input" id="reservation-name" name="name" required>
-                    </div>
-
-                    <!-- 2. お名前（フリガナ） -->
-                    <div class="mb-4">
-                        <label for="reservation-kana" class="form-label text-white d-flex align-items-center mb-2">
-                            <span>お名前（フリガナ）</span>
-                            <span class="badge reservation-badge ms-2">必須</span>
-                        </label>
-                        <input type="text" class="form-control reservation-input" id="reservation-kana" name="kana" required>
-                    </div>
-
-                    <!-- 3. メールアドレス -->
-                    <div class="mb-4">
-                        <label for="reservation-email" class="form-label text-white d-flex align-items-center mb-2">
-                            <span>メールアドレス</span>
-                            <span class="badge reservation-badge ms-2">必須</span>
-                        </label>
-                        <input type="email" class="form-control reservation-input" id="reservation-email" name="email" required>
-                    </div>
-
-                    <!-- 4. 電話番号 -->
-                    <div class="mb-4">
-                        <label for="reservation-tel" class="form-label text-white d-flex align-items-center mb-2">
-                            <span>電話番号</span>
-                            <span class="badge reservation-badge ms-2">必須</span>
-                        </label>
-                        <input type="tel" class="form-control reservation-input" id="reservation-tel" name="tel" required>
-                    </div>
-
-                    <!-- 5. ご宿泊希望日 -->
-                    <div class="mb-4">
-                        <label class="form-label text-white d-flex align-items-center mb-2">
-                            <span>ご宿泊希望日</span>
-                            <span class="badge reservation-badge ms-2">必須</span>
-                        </label>
-                        <div class="d-flex align-items-center gap-2 flex-wrap flex-sm-nowrap">
-                            <input type="date" class="form-control reservation-input flex-grow-1" id="checkin-date" name="checkin_date" required>
-                            <span class="text-white text-center px-1 date-separator">〜</span>
-                            <input type="date" class="form-control reservation-input flex-grow-1" id="checkout-date" name="checkout_date" required>
+ <section class="reservation-section position-relative smb-120">
+                    <!-- Header Section -->
+                    <div class="container smt-80 smb-80">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-12 col-lg-10">
+                                <div class="reservation-header-wrapper">
+                                    <span class="ofs-13 ols-200 lh-1f text-white d-block smb-24">Reservation</span>
+                                    <h1 class="ofw-regular ofs-21 ofs-lg-37 ols-400 lh-1f mb-0 text-white">
+                                        ご予約フォーム
+                                    </h1>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- 6. 備考 (Optional) -->
-                    <div class="mb-5">
-                        <label for="reservation-message" class="form-label text-white d-flex align-items-center mb-2">
-                            <span>備考</span>
-                        </label>
-                        <textarea class="form-control reservation-input reservation-textarea" id="reservation-message" name="message" rows="6" placeholder="ご希望やご質問などございましたらご記入ください。"></textarea>
-                    </div>
+                    <!-- Main Content & Form -->
+                    <div class="container">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-12 col-lg-10">
+                                <!-- Description -->
+                                <p class="reservation-description ols-200 lh-1f smb-56">
+                                    ご質問やご相談がございましたら、以下のフォームに必要事項を入力しお気軽にお問い合わせください。
+                                </p>
 
-                    <!-- Privacy Policy Area -->
-                    <div class="privacy-policy-wrapper mb-5 text-white">
-                        <div class="form-check mb-3">
-                            <input class="form-check-input reservation-checkbox" type="checkbox" id="reservation-privacy" required>
-                            <label class="form-check-label text-white ms-2" for="reservation-privacy">
-                                <a href="/privacy-policy" class="text-white text-decoration-underline privacy-link">プライバシーポリシー</a>に同意する
-                            </label>
+                            <div class="row d-flex justify-content-center ">
+                                <div class="col-12 col-lg-10">
+                                <!-- Reservation Form -->
+                                <form action="reservation_thank_you.html" method="POST" class="reservation-form needs-validation" novalidate>
+                                    
+                                    <!-- 1. お名前 -->
+                                    <div class="smb-40">
+                                        <label for="reservation-name" class="form-label text-white d-flex align-items-center mb-2">
+                                            <span>お名前</span>
+                                            <span class="badge reservation-badge ms-2">必須</span>
+                                        </label>
+                                        <input type="text" class="form-control reservation-input" id="reservation-name" name="name" required>
+                                        <div class="invalid-feedback">お名前を入力してください。</div>
+                                    </div>
+
+                                    <!-- 2. お名前（フリガナ） -->
+                                    <div class="smb-40">
+                                        <label for="reservation-kana" class="form-label text-white d-flex align-items-center mb-2">
+                                            <span>お名前（フリガナ）</span>
+                                            <span class="badge reservation-badge ms-2">必須</span>
+                                        </label>
+                                        <input type="text" class="form-control reservation-input" id="reservation-kana" name="kana" required>
+                                        <div class="invalid-feedback">お名前（フリガナ）を入力してください。</div>
+                                    </div>
+
+                                    <!-- 3. メールアドレス -->
+                                    <div class="smb-40">
+                                        <label for="reservation-email" class="form-label text-white d-flex align-items-center mb-2">
+                                            <span>メールアドレス</span>
+                                            <span class="badge reservation-badge ms-2">必須</span>
+                                        </label>
+                                        <input type="email" class="form-control reservation-input" id="reservation-email" name="email" required>
+                                        <div class="invalid-feedback">メールアドレスを入力してください。</div>
+                                    </div>
+
+                                    <!-- 4. 電話番号 -->
+                                    <div class="smb-40">
+                                        <label for="reservation-tel" class="form-label text-white d-flex align-items-center mb-2">
+                                            <span>電話番号</span>
+                                            <span class="badge reservation-badge ms-2">必須</span>
+                                        </label>
+                                        <input type="tel" class="form-control reservation-input" id="reservation-tel" name="tel" required>
+                                        <div class="invalid-feedback">電話番号を入力してください。</div>
+                                    </div>
+
+                                    <!-- 5. ご宿泊希望日 -->
+                                    <div class="smb-40">
+                                        <label for="checkin-date" class="form-label d-flex align-items-center mb-2">
+                                            <span>ご宿泊希望日</span>
+                                            <span class="badge reservation-badge ms-2">必須</span>
+                                        </label>
+
+                                        <div class="row flex-nowrap align-items-center ">
+                                            <div class="col-auto col-lg-4 pe-0">
+                                                <input
+                                                    type="date"
+                                                    class="form-control reservation-input reservation-date-input w-100"
+                                                    id="checkin-date"
+                                                    name="checkin_date"
+                                                    required
+                                                >
+                                            </div>
+
+                                            <div class="col-auto col-lg-4">
+                                                <span class="date-separator">〜</span>
+                                            </div>
+
+                                            <div class="col-auto col-lg-4 ps-0">
+                                                <input
+                                                    type="date"
+                                                    class="form-control reservation-input reservation-date-input w-100"
+                                                    id="checkout-date"
+                                                    name="checkout_date"
+                                                    required
+                                                >
+                                            </div>
+                                        </div>
+
+                                        <div class="invalid-feedback">
+                                            ご宿泊希望日を選択してください。
+                                        </div>
+                                    </div>
+
+                                    <!-- 6. 備考 (Optional) -->
+                                    <div class="smb-40">
+                                        <label for="reservation-message" class="form-label text-white d-flex align-items-center mb-2">
+                                            <span>備考</span>
+                                        </label>
+                                        <textarea class="form-control reservation-input reservation-textarea" id="reservation-message" name="message" rows="6" placeholder="ご希望やご質問などございましたらご記入ください。"></textarea>
+                                    </div>
+
+                                    <!-- Privacy Policy Area -->
+                                    <div class="privacy-policy-wrapper mb-5 text-white">
+                                        <div class="form-check d-flex align-items-center mb-3">
+                                            <input class="form-check-input reservation-checkbox mt-0" type="checkbox" id="reservation-privacy" required>
+                                            <label class="form-check-label text-white ms-2" for="reservation-privacy">
+                                                <a href="/privacy-policy" class="text-white text-decoration-underline privacy-link">プライバシーポリシー</a>に同意する
+                                            </label>
+                                        </div>
+                                        <div class="invalid-feedback mb-2">プライバシーポリシーへの同意が必要です。</div>
+                                        
+                                        <div class="privacy-text-block ms-1">
+                                            <h2 class="h6 text-white fw-normal mb-2">個人情報の取り扱いについて</h2>
+                                            <p class="small text-white-50 mb-1">
+                                                当サイトより取得した個人情報はプライバシーポリシーに従い、厳重に管理いたします。
+                                            </p>
+                                            <p class="small text-white-50 mb-0">
+                                                個人情報保護法に定める例外事項を除き、本人の同意を得ることなく第三者に提供、開示しません。
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Submit Button -->
+                                    <div class="text-center">
+                                        <button type="submit" class="btn reservation-submit-btn position-relative d-inline-flex align-items-center justify-content-center">
+                                            <span>送信する</span>
+                                            <i class="bi bi-caret-right-fill ms-2 reservation-btn-icon" aria-hidden="true">&#8250;</i>
+                                        </button>
+                                    </div>
+
+                                </form>
+                                </div>
+                            </div>
+
+                            </div>
                         </div>
-                        <div class="privacy-text-block ms-1">
-                            <h2 class="h6 text-white fw-normal mb-2">個人情報の取り扱いについて</h2>
-                            <p class="small text-white-50 mb-1">
-                                当サイトより取得した個人情報はプライバシーポリシーに従い、厳重に管理いたします。
-                            </p>
-                            <p class="small text-white-50 mb-0">
-                                個人情報保護法に定める例外事項を除き、本人の同意を得ることなく第三者に提供、開示しません。
-                            </p>
-                        </div>
                     </div>
-
-                    <!-- Submit Button -->
-                    <div class="text-center">
-                        <button type="submit" class="btn reservation-submit-btn">
-                            <span>送信する</span>
-                            <i class="bi bi-caret-right-fill ms-2 reservation-btn-icon"></i>
-                        </button>
-                    </div>
-
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
+                </section>
 
                 <section class="banner-section position-relative">
                     <div class="container-fluid px-0">

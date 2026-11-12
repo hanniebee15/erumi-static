@@ -1,131 +1,75 @@
+    /* =========================================================
+    ERUMI Reservation Form Visual Styling
+    ========================================================= */
 
+    .reservation-section {
+    overflow-x: hidden;
+    }
 
-/* Section Background & Base Style */
-.reservation-section {
-    background-color: #0d0608;
-    color: #ffffff;
-    min-height: 100vh;
-}
+    
 
-/* Description Text Spacing */
-.reservation-description {
-    font-size: 0.95rem;
-    line-height: 1.8;
-    letter-spacing: 0.05em;
-}
-
-/* Label & Red '必須' Badge */
-.reservation-badge {
-    background-color: #d32f2f;
-    color: #ffffff;
-    font-size: 0.7rem;
-    font-weight: 400;
-    padding: 3px 8px;
+    /* Required Badge */
+    .reservation-badge {
+    background-color: var(--color-required);
+    color: var(--color-white);
+    padding: 0.25em 0.5em;
     border-radius: 2px;
-    letter-spacing: 0.05em;
-}
+    }
 
-/* Light Pink Input Fields & Textarea */
-.reservation-input {
-    background-color: #f7e8eb !important;
-    border: none !important;
-    border-radius: 2px !important;
-    color: #1a1a1a !important;
-    padding: 12px 16px;
-    font-size: 0.95rem;
-    box-shadow: none !important;
-}
+    /* Form Inputs & Textarea */
+    .reservation-input {
+    width: 100%;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 0.65rem 0.85rem;
+    }
 
-.reservation-input:focus {
-    outline: 2px solid #d32f2f;
-}
+    .reservation-input:focus {
+    background-color: var(--color-white);
+    }
 
-/* Date Range Separator Styling */
-.date-separator {
-    font-size: 1.2rem;
-    min-width: 20px;
-}
 
-/* Placeholder Styling */
-.reservation-textarea::placeholder {
-    color: #a08c90;
-    font-size: 0.9rem;
-}
 
-.reservation-textarea {
+    .reservation-textarea {
+    min-height: 150px;
     resize: vertical;
-    min-height: 180px;
-}
+    }
 
-/* Checkbox Alignment & Styling */
-.reservation-checkbox {
-    width: 18px;
-    height: 18px;
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    cursor: pointer;
-    margin-top: 0.15rem;
-}
-
-.reservation-checkbox:checked {
-    background-color: #2a0d14;
-    border-color: #d32f2f;
-}
-
-.privacy-link {
-    transition: opacity 0.2s ease;
-}
-
-.privacy-link:hover {
-    opacity: 0.8;
-}
-
-.privacy-text-block p {
-    line-height: 1.7;
-    font-size: 0.85rem;
-    color: #dcdcdc !important;
-}
-
-/* Submit Button */
-.reservation-submit-btn {
-    background-color: #f7e8eb;
-    color: #2a0d14;
+    /* Privacy Policy Checkbox */
+    .reservation-checkbox {
+    width: 1.05rem;
+    height: 1.05rem;
     border: none;
     border-radius: 2px;
-    padding: 12px 48px;
-    font-size: 1rem;
-    letter-spacing: 0.1em;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 260px;
-    transition: all 0.3s ease;
-}
-
-.reservation-submit-btn:hover {
-    background-color: #ebd4d9;
-    color: #000000;
-    transform: translateY(-1px);
-}
-
-.reservation-btn-icon {
-    font-size: 0.75rem;
-}
-
-/* Responsive adjustments */
-@media (max-width: 575.98px) {
-    .date-separator {
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-        margin: 0.2rem 0;
+    cursor: pointer;
     }
-}
 
-@media (max-width: 767.98px) {
+
+    /* Submit Button */
     .reservation-submit-btn {
-        width: 100%;
-        max-width: 320px;
+    width: 100%;
+    max-width: 320px;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border: none;
+    border-radius: 2px;
+    padding: 0.95rem 2rem;
+    transition: opacity 0.25s ease;
     }
-}
+
+    .reservation-submit-btn:hover,
+    .reservation-submit-btn:focus {
+    color: #2a1c1b;
+    opacity: 0.92;
+    }
+
+    .reservation-btn-arrow {
+    position: absolute;
+    right: 1.25rem;
+    }
+
+    .date-separator {
+        width: 12px;
+    }
