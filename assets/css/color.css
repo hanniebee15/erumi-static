@@ -10,6 +10,7 @@ Figmaのカラーとフォーム内の実使用色。既存の変数＋クラス
     --color-gray: #b4b4b4;
     --color-muted: #757575;
     --color-required: #d00000;
+    --color-modal: #393939;
 }
 
 .bg-black {
