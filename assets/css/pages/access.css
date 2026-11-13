@@ -8,7 +8,9 @@
 /* =========================================
    ERUMI ACCESS PAGE
 ========================================= */
-
+.custom-border-bottom{
+    border-bottom-width: 0.5px !important;
+}
 /* --- INFO LIST & DIVIDERS --- */
 .erumi-access-info-list {
     width: 100%;
@@ -48,20 +50,4 @@
     border: 0;
 }
 
-/* --- TABLET --- */
-@media (max-width: 991.98px) {
-    .erumi-access-hero-img {
-        height: clamp(350px, 55vh, 600px);
-    }
-}
 
-/* --- MOBILE --- */
-@media (max-width: 767.98px) {
-    .erumi-access-hero-img {
-        height: clamp(300px, 55vh, 480px);
-    }
-
-    .erumi-access-map-wrap {
-        height: 300px;
-    }
-}
