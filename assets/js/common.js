@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // for top initial animation
 document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll(
-        ".top-news-section, .top-about-section, .top-about-your-stay-section, .top-gallery-wrapper, .top-stories-section, .banner-section, .site-footer"
+        ".top-news-section, .top-about-section, .top-about-your-stay-section, .top-gallery-wrapper, .top-stories-section, .banner-section"
     );
 
     // Check if the page was reloaded manually by the user

@@ -211,7 +211,6 @@
     }
 }
 
-
 .related-story-image-wrapper {
   aspect-ratio: 16 / 10;
   background-color: var(--color-gray);
@@ -226,8 +225,8 @@
 
 .top-stories-section-title,
 .custom-stories-row{
-    padding-left: 28px !important;
-    padding-right: 28px !important;
+    padding-left: 28px;
+    padding-right: 28px;
 }
 
 
@@ -242,9 +241,7 @@
 }
 
 @media (min-width: 992px) {
-    .top-stories-section-wrapper{
-        padding: 0px !important;
-    }
+
     .custom-stories-row .story-col {
         width: calc((100% - (79px * 2)) / 3);
     }
