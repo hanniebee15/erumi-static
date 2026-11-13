@@ -9,37 +9,6 @@
    ERUMI ACCESS PAGE
 ========================================= */
 
-/* --- BACKGROUND --- */
-.erumi-access-section {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-}
-
-/* --- FV RESPONSIVE IMAGE --- */
-.erumi-access-hero-img-wrap {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-}
-
-.erumi-access-hero-img-wrap picture {
-    display: block;
-    width: 100%;
-}
-
-.erumi-access-hero-img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: clamp(360px, 60vh, 750px);
-    object-fit: cover;
-    object-position: center;
-}
-
 /* --- INFO LIST & DIVIDERS --- */
 .erumi-access-info-list {
     width: 100%;
