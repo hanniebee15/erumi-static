@@ -1,0 +1,141 @@
+/* COOKIE POLICY */
+.cookie-policy-section {
+    position: relative;
+}
+
+.cookie-policy-body {
+    width: 100%;
+}
+
+.cookie-policy-lead,
+.cookie-policy-text {
+    text-align: justify;
+    word-break: break-all;
+}
+
+.cookie-policy-table-wrap {
+    position: relative;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.cookie-policy-table-wrap::-webkit-scrollbar {
+    height: 4px;
+}
+
+.cookie-policy-table-wrap::-webkit-scrollbar-track {
+    background: var(--color-modal);
+    opacity: 0.8;
+}
+
+.cookie-policy-table-wrap::-webkit-scrollbar-thumb {
+    background: var(--color-white);
+}
+
+.cookie-policy-table {
+    width: 100%;
+    min-width: 1076px;
+    border-collapse: collapse;
+    border: 1px solid var(--color-white);
+    table-layout: fixed;
+}
+
+.cookie-policy-table-head,
+.cookie-policy-table-data {
+    padding: 16px 24px;
+    border: 1px solid var(--color-white);
+    text-align: left;
+    vertical-align: middle;
+    line-height: 2;
+    word-break: break-all;
+}
+
+.cookie-policy-table-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cookie-policy-table-list li {
+    position: relative;
+    padding-left: 1em;
+}
+
+.cookie-policy-table-list li::before {
+    content: "・";
+    position: absolute;
+    left: 0;
+}
+
+
+.cookie-policy-link {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.cookie-policy-link::after {
+    content: "";
+    display: inline-block;
+    width: 0.9em;
+    height: 0.9em;
+    margin-left: 0.3em;
+    vertical-align: -0.1em;
+    background-color: currentColor;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.2'%3E%3Cpath d='M6.5 3H3v10h10V9.5M9 2.5h4.5V7M13.5 2.5 7.5 8.5'/%3E%3C/svg%3E") no-repeat center / contain;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.2'%3E%3Cpath d='M6.5 3H3v10h10V9.5M9 2.5h4.5V7M13.5 2.5 7.5 8.5'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+
+.cookie-policy-table-area {
+    position: relative;
+}
+
+.cookie-policy-scroll-hint {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;             
+    pointer-events: none;   
+    transition: opacity 0.4s ease;
+}
+
+.cookie-policy-scroll-hint.is-hidden {
+    opacity: 0;
+}
+
+.cookie-policy-scroll-icon {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+@media (min-width: 992px) {
+    .cookie-policy-lead,
+    .cookie-policy-text {
+        text-align: left;
+    }
+
+    .cookie-policy-table-wrap {
+        overflow-x: visible;
+        padding-bottom: 0;
+    }
+
+    .cookie-policy-table {
+        min-width: 0;
+    }
+
+    .cookie-policy-table-head,
+    .cookie-policy-table-data {
+        padding: 20px 24px;
+    }
+
+    .cookie-policy-table-head {
+        width: 28%;
+    }
+
+    .cookie-policy-scroll-hint {
+        display: none;
+    }
+}

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>えるみHP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/color.css">
+    <link rel="stylesheet" href="assets/css/font.css">
+    <link rel="stylesheet" href="assets/css/line-height.css">
+    <link rel="stylesheet" href="assets/css/margin.css">
+    <link rel="stylesheet" href="assets/css/padding.css">
+    <link rel="stylesheet" href="assets/css/spacing.css"> 
+    <link rel="stylesheet" href="assets/css/pages/cookie-policy.css">  
+    
+</head>
+<body>
+    <!-- header start -->
+     <header class="site-header">
+        <div class="position-fixed top-0 start-0 w-100 header-wrapper">               
+            <div class="container position-relative">               
+                <div class="row align-items-center spt-40 spt-lg-24">
+
+                    <div class="col-auto col-lg-1 header-logo">
+                        <a href="index.html" class="m-0 link-hover">
+                            <img src="assets/images/common/erumi-logo.svg" alt="erumi">
+                        </a>
+                    </div>
+
+                    <div class="col-lg-8 d-none d-lg-block header-nav">
+                        <ul class="nav-bar d-flex align-items-center justify-content-between list-unstyled ofs-5 ofs-lg-3 ofs-xl-4 ofs-xxl-5 ols-200 ols-lg-50 ols-xl-100 ols-xxl-200 lh-2 column-gap-xl-2 column-gap-xxl-3 text-white mb-0 flex-nowrap">
+                            <li class="nav-item link-hover"><a href="index.html">TOP</a></li>
+                            <li class="nav-item link-hover"><a href="about.html">ABOUT</a></li>
+                            <li class="nav-item link-hover"><a href="about_your_stay.html">ご滞在について</a></li>
+                            <li class="nav-item link-hover"><a href="stories.html">よみもの</a></li>
+                            <li class="nav-item link-hover"><a href="news.html">お知らせ</a></li>
+                            <li class="nav-item link-hover"><a href="access.html">交通アクセス</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col col-lg-3 header-actions">
+                        <ul class="d-flex align-items-center justify-content-end justify-content-lg-between list-unstyled column-gap-3 column-gap-xxl-4 text-body mb-0">
+                            <li class="nav-item ofs-5 ofs-lg-3 ofs-xl-4 ofs-xxl-5 ols-200 ols-lg-50 ols-xl-100 ols-xxl-200 lh-2 text-white">EN/JP</li>
+                            <li class="nav-item">
+                                <button type="button" class="nav-button ofs-5 ofs-lg-3 ofs-xl-4 ofs-xxl-5 ols-200 ols-lg-50 ols-xl-100 ols-xxl-200 lh-2 bg-white text-black">予約する</button>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="menu-toggle" aria-label="Menu">
+                                    <span></span><span></span><span></span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hamburger Menu -->
+    <div class="container px-0 mx-0">
+        <div class="row d-flex justify-content-center px-0 mx-0">
+            <div class="col-12 px-0">
+                <div class="fullscreen-menu" id="fullscreen-menu" aria-hidden="true">
+                    <div class="fullscreen-menu-inner spt-176">
+                        <div class="fullscreen-menu-header">
+                            <a href="#" class="fullscreen-menu-logo">
+                                <img src="assets/images/common/erumi-logo.svg" alt="ERUMI">
+                            </a>
+                            <button type="button" class="menu-close" aria-label="Close menu">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <nav class="fullscreen-menu-nav smb-72" aria-label="Main navigation">
+                        <div class="container px-0 mx-0">
+                            <div class="row justify-content-center">
+                            <!-- Left Column -->
+                            <div class="col-12 col-md-10 col-lg-8">
+                                <div class="menu-nav-column ofs-13 ols-200 spb-40">
+                                <a href="index.html">TOP</a>
+                                <a href="about.html">ABOUT</a>
+                                <a href="about_your_stay.html">ご滞在について</a>
+                                <a href="stories.html">よみもの</a>
+                                </div>
+                            </div>
+                            </div>
+                            <!-- Right Column -->
+                            <div class="row d-flex justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8">
+                                <div class="menu-nav-column-2 text-start ofs-13 ols-200">
+                                <a href="news.html">お知らせ</a>
+                                <a href="access.html">交通アクセス</a>
+                                <a href="faq.html">よくあるご質問</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </nav>
+                        <!-- Mobile nav -->
+                        <nav class="mobile-menu-nav lh-1f ols-20" aria-label="Main navigation">
+                            <div class="menu-nav-column ofs-5 ofw-regular lh-2f ols-400">
+                                <a href="index.html">TOP</a>
+                                <a href="about.html">ABOUT</a>
+                            </div>
+                            <div class="menu-nav-column ofs-5 ofw-regular lh-2f ols-400">
+                                <a href="about_your_stay.html">ご滞在について</a>
+                                <a href="stories.html">よみもの</a>
+                            </div>
+                            <div class="menu-nav-column ofs-5 ofw-regular lh-2f ols-400">
+                                <a href="news.html">お知らせ</a>
+                                <a href="access.html">交通アクセス</a>
+                            </div>
+                            <div class="menu-nav-column ofs-5 ofw-regular lh-2f ols-400">
+                                <a href="faq.html">よくあるご質問</a>
+                            </div>
+                        </nav>
+
+                        <div class="container px-0">
+                        <div class="row d-flex justify-content-center mx-0">
+                            <div class="col-12 col-md-10 col-lg-8">
+                            <div class="fullscreen-menu-cta smb-32">
+                                <a href="contact.html" class="menu-cta-button ofs-9 ofs-lg-13">お問い合わせ</a>
+                                <a href="reservation.html" class="menu-cta-button ofs-9 ofs-lg-13">予約する</a>
+                            </div>
+                            <div class="fullscreen-menu-footer">
+                                    <div class="menu-footer-links d-flex justify-content-between ofs-3">
+                                        <a href="privacy.html">プライバシーポリシー</a>
+                                        <a href="cookie.html">クッキーポリシー</a>
+                                        <a href="terms.html">宿泊約款</a>
+                                    </div>
+                                <div class="menu-language ols-200">
+                                    <a href="#">EN</a>
+                                    <span>/</span>
+                                    <a href="#">JP</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Hamburger Menu -->
+        
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb-section spt-152 spt-lg-128" aria-label="breadcrumb">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <ol class="breadcrumb-list d-flex align-items-center list-unstyled ff-shippori-mincho ofw-regular ofs-5 ols-40 lh-2 text-white m-0">
+                        <li><a href="index.html">TOP</a></li>
+                        <li aria-current="page">宿泊約款</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+            <!-- ACCOMMODATION POLICY -->
+            <section class="accommodation-policy-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+
+                            <div class="row align-items-center">
+                                <div class="col-12 col-lg-8 offset-lg-1 spt-80 spb-80">
+                                    <p class="title-page-en ff-shippori-mincho ofw-regular ofs-5 ofs-lg-13 ols-200 lh-1f smb-lg-24">
+                                        ACCOMMODATION POLICY
+                                    </p>
+                                    <h1 class="title-page-jp ofs-21 ofs-lg-37 ofw-regular ols-200 ols-lg-400 lh-1f mb-0">
+                                        宿泊約款
+                                    </h1>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 col-lg-10 offset-lg-1">
+                                    <div class="accommodation-policy-body spb-120">
+
+                                        <!-- 第1条 -->
+                                        <div class="accommodation-policy-block spb-64">
+                                            <h2 class="accommodation-policy-heading ofs-13 ofs-lg-21 ofw-regular ols-200 lh-1f spb-16 mb-0">第1条（適用範囲）</h2>
+                                            <p class="accommodation-policy-text ofs-5 ofw-regular ols-100 lh-2 mb-0">
+                                                当施設が宿泊客との間で締結する宿泊契約及びこれに関連する契約は、この約款の定めるところによるものとします。
+                                                この約款に定めのない事項については、法令又は一般に確立された慣習によるものとします。
+                                            </p>
+                                        </div>
+
+                                        <!-- 第2条 (text + list) -->
+                                        <div class="accommodation-policy-block spb-64">
+                                            <h2 class="accommodation-policy-heading ofs-13 ofs-lg-21 ofw-regular ols-200 lh-1f spb-16 mb-0">第2条（宿泊契約の申込み）</h2>
+                                            <p class="accommodation-policy-text ofs-5 ofw-regular ols-100  lh-2 spb-16 mb-0">
+                                                当施設に宿泊契約の申込みをしようとする方は、次の事項を当施設に申し出ていただきます
+                                            </p>
+                                            <ul class="accommodation-policy-list list-unstyled">
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・宿泊者名</li>
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・宿泊日及び到着予定時刻</li>
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・宿泊料金</li>
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・その他当施設が必要と認める事項</li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- 第3条 -->
+                                        <div class="accommodation-policy-block spb-64">
+                                            <h2 class="accommodation-policy-heading ofs-13 ofs-lg-21 ofw-regular ols-200 lh-1f spb-16 mb-0">第3条（宿泊契約の成立）</h2>
+                                            <p class="accommodation-policy-text ofs-5 ofw-regular ols-100  lh-2 mb-0">
+                                                宿泊契約は、当施設が前条の申込みを承諾したときに成立するものとします。
+                                                当施設が承諾したことの確認は、予約確認メールの送信をもって行います。
+                                            </p>
+                                        </div>
+
+                                        <!-- 第4条 (text + list) -->
+                                        <div class="accommodation-policy-block spb-64">
+                                            <h2 class="accommodation-policy-heading ofs-13 ofs-lg-21 ofw-regular ols-200 lh-1f spb-16 mb-0">第4条（宿泊契約の拒否）</h2>
+                                            <p class="accommodation-policy-text ofs-5 ofw-regular ols-100  lh-2 spb-16 mb-0">
+                                                当施設は、次のいずれかに該当する場合には、宿泊契約の締結に応じないことがあります。
+                                            </p>
+                                            <ul class="accommodation-policy-list list-unstyled">
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・宿泊の申込みが、この約款によらないとき</li>
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・満室により客室の余裕がないとき</li>
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・宿泊しようとする方が、宿泊に関し法令の規定、公の秩序若しくは善良の風俗に反するおそれがあると認められるとき</li>
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・宿泊しようとする方が、伝染病者であると明らかに認められるとき</li>
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・宿泊に関し暴力的要求行為が行われ、又は合理的な範囲を超える負担を求められたとき</li>
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・天災、施設の故障その他やむを得ない事由により宿泊させることができないとき</li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- 第5条 (text + list) -->
+                                        <div class="accommodation-policy-block spb-64">
+                                            <h2 class="accommodation-policy-heading ofs-13 ofs-lg-21 ofw-regular ols-200 lh-1f spb-16 mb-0">第5条（宿泊者の契約解除）</h2>
+                                            <p class="accommodation-policy-text ofs-5 ofw-regular ols-100  lh-1f lh-lg-2 spb-16 mb-0">
+                                                宿泊客が宿泊契約を解除する場合は、当施設に申し出ていただきます。
+                                                当施設がその解除の通知を受けた日によって、以下のキャンセル料が発生します。
+                                            </p>
+                                            <ul class="accommodation-policy-list  list-unstyled">
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・宿泊日の7日前まで：キャンセル料なし</li>
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・宿泊日の6日〜4日前：宿泊料金の50%</li>
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・宿泊日の3日前〜前日：宿泊料金の70%</li>
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・宿泊当日：宿泊料金の100%</li>
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・無断キャンセル：宿泊料金の100%</li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- 第6条 (list) -->
+                                        <div class="accommodation-policy-block spb-64">
+                                            <h2 class="accommodation-policy-heading ofs-13 ofs-lg-21 ofw-regular ols-200 lh-1f spb-16 mb-0">第6条（当施設の契約解除）</h2>
+                                            <p class="accommodation-policy-text ofs-5 ofw-regular ols-100  lh-2 spb-16 mb-0">
+                                                当施設は、次のいずれかに該当する場合には、宿泊契約を解除することがあります。
+                                            </p>
+                                            <ul class="accommodation-policy-list  list-unstyled">
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・宿泊客が宿泊に関し法令の規定、公の秩序若しくは善良の風俗に反する行為をするおそれがあると認められるとき</li>
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・宿泊客が他の宿泊客に対し、著しく迷惑を及ぼす言動をしたとき</li>
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・宿泊客が所定の料金をお支払いいただけないことが明らかなとき</li>
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・天災その他やむを得ない事由により宿泊させることができないとき</li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- 第7条 -->
+                                        <div class="accommodation-policy-block spb-64">
+                                            <h2 class="accommodation-policy-heading ofs-13 ofs-lg-21 ofw-regular ols-200 lh-1f spb-16 mb-0">第7条（宿泊料金の支払い）</h2>
+                                            <p class="accommodation-policy-text ofs-5 ofw-regular ols-100  lh-2 mb-0">
+                                                宿泊料金の支払いは、宿泊客のチェックイン時または当施設が定める方法により、現金またはクレジットカード等、当施設が認める方法でお支払いいただきます。
+                                            </p>
+                                        </div>
+
+                                        <!-- 第8条 -->
+                                        <div class="accommodation-policy-block spb-64">
+                                            <h2 class="accommodation-policy-heading ofs-13 ofs-lg-21 ofw-regular ols-200 lh-1f spb-16 mb-0">第8条（チェックイン・チェックアウト）</h2>
+                                            <p class="accommodation-policy-text ofs-5 ofw-regular ols-100  lh-2 mb-0">
+                                                チェックイン時刻は15:00から18:00とします。<br>
+                                                チェックアウト時刻は11:00とします。<br>
+                                                やむを得ない事情がある場合は、事前にご相談ください。
+                                            </p>
+                                        </div>
+
+                                        <!-- 第9条 -->
+                                        <div class="accommodation-policy-block spb-64">
+                                            <h2 class="accommodation-policy-heading ofs-13 ofs-lg-21 ofw-regular ols-200 lh-1f spb-16 mb-0">第9条（施設の利用時間）</h2>
+                                            <p class="accommodation-policy-text ofs-5 ofw-regular ols-100  lh-2 mb-0">
+                                                宿泊客が当施設の施設を利用できる時間は、チェックイン時刻からチェックアウト時刻までとします。
+                                                ただし、当施設が定める場合においては、この限りではありません。
+                                            </p>
+                                        </div>
+
+                                        <!-- 第10条 (list) -->
+                                        <div class="accommodation-policy-block spb-64">
+                                            <h2 class="accommodation-policy-heading ofs-13 ofs-lg-21 ofw-regular ols-200 lh-1f spb-16 mb-0">第10条（宿泊客の遵守事項）</h2>
+                                            <p class="accommodation-policy-text ofs-5 ofw-regular ols-100  lh-2 spb-16 mb-0">
+                                                宿泊客は、当施設内において次の行為を行わないものとします。
+                                            </p>
+                                            <ul class="accommodation-policy-list  list-unstyled">
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・施設内での喫煙</li>
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・施設内への飲食物の持ち込み</li>
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・ペットその他の動物の持ち込み</li>
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・賭博その他風紀を乱す行為</li>
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・他の宿泊客に迷惑を及ぼす騒音・大声等の行為</li>
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・施設・設備・備品の破損・汚損行為</li>
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・宿泊者以外の第三者を館内に招き入れる行為</li>
+                                                <li class="accommodation-policy-list-item ofs-5 ofw-regular ols-100  lh-2">・その他当施設が不適切と判断する行為</li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- 第11条 -->
+                                        <div class="accommodation-policy-block spb-64">
+                                            <h2 class="accommodation-policy-heading ofs-13 ofs-lg-21 ofw-regular ols-200 lh-1f spb-16 mb-0">第11条（貴重物等の取扱い）</h2>
+                                            <p class="accommodation-policy-text ofs-5 ofw-regular ols-100  lh-2 mb-0">
+                                                宿泊客が当施設に持ち込んだ物品について、当施設のフロントにて保管を依頼されたものについては、
+                                                盗難・紛失又は毀損が生じた場合において、それが不可抗力である場合を除き、当施設はその損害を賠償します。
+                                                ただし、現金及び有価証券については、当施設はその損害を賠償する責任を負いません。
+                                            </p>
+                                        </div>
+
+                                        <!-- 第12条 -->
+                                        <div class="accommodation-policy-block spb-64">
+                                            <h2 class="accommodation-policy-heading ofs-13 ofs-lg-21 ofw-regular ols-200 lh-1f spb-16 mb-0">第12条（駐車場の利用）</h2>
+                                            <p class="accommodation-policy-text ofs-5 ofw-regular ols-100  lh-2 mb-0">
+                                                宿泊客が当施設の駐車場を利用される場合、車両の保管についての責任は負いかねます。
+                                                当施設は駐車スペースをご提供するものであり、車両の管理は宿泊客ご自身の責任においてお願いいたします。
+                                            </p>
+                                        </div>
+
+                                        <!-- 第13条 -->
+                                        <div class="accommodation-policy-block spb-64">
+                                            <h2 class="accommodation-policy-heading ofs-13 ofs-lg-21 ofw-regular ols-200 lh-1f spb-16 mb-0">第13条(宿泊客の責任)</h2>
+                                            <p class="accommodation-policy-text ofs-5 ofw-regular ols-100  lh-2 mb-0">
+                                                宿泊客の故意又は過失により当施設が損害を被った場合は、当該宿泊客にその損害を賠償していただきます。
+                                            </p>
+                                        </div>
+
+                                        <!-- 第14条 (text + contact) -->
+                                        <div class="accommodation-policy-block spb-8">
+                                            <h2 class="accommodation-policy-heading ofs-13 ofs-lg-21 ofw-regular ols-200 lh-1f spb-16 mb-0">第14条（約款の変更）</h2>
+                                            <p class="accommodation-policy-text ofs-5 ofw-regular ols-100  lh-2 spb-32 spb-lg-8 mb-0">
+                                                この約款は、法令の変更または必要に応じて変更することがあります。
+                                                変更後の約款は、当施設のウェブサイト上に掲示した時点から効力を有するものとします。
+                                            </p>
+
+                                            <div class="accommodation-policy-supplement">
+                                                <h3 class="accommodation-policy-supplement-heading ofs-5 ofw-regular ols-200 lh-2 mb-0">附則</h3>
+                                                <p class="accommodation-policy-supplement-text ofs-5 ofw-regular ols-100 lh-2 mb-0 d-none d-lg-block">
+                                                    本約款の日本語版と英語版の解釈に相違が生じた場合は、日本語版を優先するものとします。
+                                                </p>
+                                                <ul class="accommodation-policy-supplement-list list-unstyled">
+                                                    <li class="accommodation-policy-supplement-item ofs-5 ofw-regular ols-200 lh-2">制定日：2026年00月00日</li>
+                                                    <li class="accommodation-policy-supplement-item ofs-5 ofw-regular ols-200 lh-2">事業者名：株式会社ピース</li>
+                                                    <li class="accommodation-policy-supplement-item ofs-5 ofw-regular ols-200 lh-2">代表者名：佐々木 亮平</li>
+                                                    <li class="accommodation-policy-supplement-item ofs-5 ofw-regular ols-200 lh-2">所在地：兵庫県赤穂市尾崎730</li>
+                                                    <li class="accommodation-policy-supplement-item ofs-5 ofw-regular ols-200 lh-2">連絡先：info@erumi.jp</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- BANNER -->
+            <section class="banner-section position-relative">
+                <div class="container-fluid px-0">
+                    <div class="row mx-0">
+                        <div class="col-12 px-0 position-relative">
+                            <picture>
+                                <source media="(min-width:768px)"
+                                        srcset="assets/images/common/banner_background_pc.jpg">
+                                <img src="assets/images/common/banner_background_sp.jpg"
+                                    alt="えるみの店内の様子"
+                                    class="d-block w-100 h-100 banner-img"
+                                    fetchpriority="high">
+                            </picture>
+                            <div class="row mx-0">
+                                <div class="col-12 px-0">
+                                    <div class="banner-overlay-content text-center text-white mx-0">
+                                        <h1 class="ofs-21 ofs-lg-29 ols-300 lh-1f text-white spb-16 mb-0">ご 予 約</h1>      
+                                        <p class="hero-description ofs-5 ols-200 lh-1f text-white spb-32 spb-lg-40 mb-0">
+                                            えるみのご予約はこちらの <br class="d-md-none">
+                                            フォームからのみ<br class="d-none d-md-block"> 承っております。  
+                                        </p>                        
+                                        <div class="btn-reservation-wrapper">
+                                            <a href="#" class="btn-reservation ff-mincho ofs-3 ols-200 lh-1f text-white link-hover">予約する</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>           
+                        </div>
+                    </div>    
+                </div>
+            </section>
+    </main>
+ 
+    <footer class="site-footer py-5">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12 col-lg-10">
+                            <div class="row mb-4 mb-lg-3 nav-section-wrapper spb-56 mx-0">                                                  
+                                <!-- Left Column: Vertical Logo (Centered on mobile, Left-aligned on desktop) -->
+                                <div class="col-12 col-md-3 col-md-gx-1 d-flex justify-content-center justify-content-md-start ps-lg-5 spb-56 spb-lg-0">  
+                                    <figure class="m-0 footer-logo">
+                                        <img src="assets/images/common/erumi-logo.svg" alt="erumi">
+                                    </figure>
+                                </div>
+                                <div class="col-12 col-md-7 footer-nav">
+                                    <!-- Nav Items (Stacked/Centered on Mobile, Row-based Grid on Desktop) -->
+                                <div class="d-flex flex-column flex-lg-row flex-wrap align-items-md-start opb-6 spb-md-48 custom-nav-flex">
+                                        <a href="index.html" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">TOP</a>
+                                        <a href="about.html" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">ABOUT</a>
+                                        <a href="#" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">ご滞在について</a>
+                                        <a href="#" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">よみもの</a>
+                                        <a href="news.html" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">お知らせ</a>
+                                        <a href="#" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">交通アクセス</a>
+                                        <a href="faq.html" class="link-hover spb-lg-0 ff-mincho lh-1f ols-200 text-white">よくある質問</a>
+                                    </div>
+                                    <div class="d-flex flex-column flex-lg-row justify-content-md-start gap-3">
+                                        <a href="#" class="text-nowrap text-center btn-footer-action bg-white text-black link-hover lh-1f ols-200">お問い合わせ</a>
+                                        <a href="#" class="text-nowrap text-center btn-footer-action bg-white text-black link-hover lh-1f ols-200">予約する</a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="row align-items-start text-md-start">
+                                <div class="col-12 col-md-8">
+                                    <div class="d-flex flex-column flex-md-row justify-content-md-start gap-2 gap-md-4 footer-legal spb-40 spb-md-16 opb-sm-">
+                                        <a href="#" class="ff-mincho ofs-3 lh-1f ols-200 text-white link-hover">プライバシーポリシー</a>
+                                        <a href="#" class="ff-mincho ofs-3 lh-1f ols-200 text-white link-hover">クッキーポリシー</a>
+                                        <a href="#" class="ff-mincho ofs-3 lh-1f ols-200 text-white link-hover">宿泊約款</a>
+                                    </div>
+                                    <div class="ff-mincho ofs-3  lh-1f ols-200 text-white pb-2 pb-lg-0">
+                                        兵庫県赤穂市尾崎730
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 text-md-end ff-mincho ofs-3  lh-1f ols-200 text-white">
+                                    ©2026 ERUMI
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+<script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/js/common.js"></script>
+</body>
+</html>
