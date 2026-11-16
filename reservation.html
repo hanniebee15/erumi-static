@@ -168,6 +168,7 @@
 
 <main>
         <!-- RESERVATION -->
+        <!-- RESERVATION -->
         <section class="reservation-section">
             <div class="container">
                 <div class="row">
@@ -184,97 +185,97 @@
                             </div>
                         </div>
 
-                            <div class="row">
-                                <div class="col-12 col-lg-10 offset-lg-1">
-                                    <p class="contact-lead ofs-5 ofw-regular ols-200 ols-lg-100 lh-1f lh-lg-2 smb-56">
-                                        ご質問やご相談がございましたら、以下のフォームに必要事項を入力しお気軽にお問い合わせください。
-                                    </p>
+                        <div class="row">
+                            <div class="col-12 col-lg-10 offset-lg-1">
+                                <p class="reservation-lead ofs-5 ofw-regular ols-200 ols-lg-100 lh-1f lh-lg-2 smb-56">
+                                    ご質問やご相談がございましたら、以下のフォームに必要事項を入力しお気軽にお問い合わせください。
+                                </p>
 
-                                    
-                                </div>
+                                
                             </div>
-                            <div class="row">
-                                <div class="col-12 col-lg-8 offset-lg-2">
-                                    <form class="contact-form" action="" method="post">
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-8 offset-lg-2">
+                                <form class="reservation-form" action="" method="post">
 
-                                        <div class="contact-item smb-40">
-                                            <label class="contact-label d-flex align-items-center ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 spb-8 mb-0" for="contact-name">
-                                                お名前<span class="contact-required ofs-1 ofw-medium ols-200 lh-1 bg-required">必須</span>
-                                            </label>
-                                            <input class="contact-input bg-light" type="text" id="contact-name" name="name" required>
+                                    <div class="reservation-item smb-40">
+                                        <label class="reservation-label d-flex align-items-center ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 spb-8 mb-0" for="reservation-name">
+                                            お名前<span class="reservation-required ofs-1 ofw-medium ols-200 lh-1 bg-required">必須</span>
+                                        </label>
+                                        <input class="reservation-input bg-light" type="text" id="reservation-name" name="name" required>
+                                    </div>
+
+                                    <div class="reservation-item smb-40">
+                                        <label class="reservation-label d-flex align-items-center ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 spb-8 mb-0" for="reservation-kana">
+                                            お名前(フリガナ)<span class="reservation-required ofs-1 ofw-medium ols-200 lh-1 bg-required">必須</span>
+                                        </label>
+                                        <input class="reservation-input bg-light" type="text" id="reservation-kana" name="kana" required>
+                                    </div>
+
+                                    <div class="reservation-item smb-40">
+                                        <label class="reservation-label d-flex align-items-center ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 spb-8 mb-0" for="reservation-email">
+                                            メールアドレス<span class="reservation-required ofs-1 ofw-medium ols-200 lh-1 bg-required">必須</span>
+                                        </label>
+                                        <input class="reservation-input bg-light" type="email" id="reservation-email" name="email" required>
+                                    </div>
+
+                                    <div class="reservation-item smb-40">
+                                        <label class="reservation-label d-flex align-items-center ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 spb-8 mb-0" for="reservation-tel">
+                                            電話番号<span class="reservation-required ofs-1 ofw-medium ols-200 lh-1 bg-required">必須</span>
+                                        </label>
+                                        <input class="reservation-input bg-light" type="tel" id="reservation-tel" name="tel" required>
+                                    </div>
+
+                                    <div class="reservation-item smb-40">
+                                        <label class="reservation-label d-flex align-items-center ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 spb-8 mb-0" for="reservation-checkin">
+                                            ご宿泊希望日<span class="reservation-required ofs-1 ofw-medium ols-200 lh-1 bg-required">必須</span>
+                                        </label>
+                                        <div class="reservation-date-range" role="group" aria-labelledby="reservation-checkin-label">
+                                            <input class="reservation-input reservation-date bg-light" type="date" id="reservation-checkin" name="checkin" aria-label="チェックイン日" required>
+                                            <span class="reservation-date-sep ofs-5 ofw-regular ols-100 lh-2" aria-hidden="true">〜</span>
+                                            <input class="reservation-input reservation-date bg-light" type="date" id="reservation-checkout" name="checkout" aria-label="チェックアウト日" required>
                                         </div>
-
-                                        <div class="contact-item smb-40">
-                                            <label class="contact-label d-flex align-items-center ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 spb-8 mb-0" for="contact-kana">
-                                                お名前(フリガナ)<span class="contact-required ofs-1 ofw-medium ols-200 lh-1 bg-required">必須</span>
-                                            </label>
-                                            <input class="contact-input bg-light" type="text" id="contact-kana" name="kana" required>
-                                        </div>
-
-                                        <div class="contact-item smb-40">
-                                            <label class="contact-label d-flex align-items-center ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 spb-8 mb-0" for="contact-email">
-                                                メールアドレス<span class="contact-required ofs-1 ofw-medium ols-200 lh-1 bg-required">必須</span>
-                                            </label>
-                                            <input class="contact-input bg-light" type="email" id="contact-email" name="email" required>
-                                        </div>
-
-                                        <div class="contact-item smb-40">
-                                            <label class="contact-label d-flex align-items-center ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 spb-8 mb-0" for="contact-tel">
-                                                電話番号<span class="contact-required ofs-1 ofw-medium ols-200 lh-1 bg-required">必須</span>
-                                            </label>
-                                            <input class="contact-input bg-light" type="tel" id="contact-tel" name="tel" required>
-                                        </div>
-
-                                        <div class="contact-item smb-40">
-                                            <label class="contact-label d-flex align-items-center ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 spb-8 mb-0" for="contact-checkin">
-                                                ご宿泊希望日<span class="contact-required ofs-1 ofw-medium ols-200 lh-1 bg-required">必須</span>
-                                            </label>
-                                            <div class="contact-date-range" role="group" aria-labelledby="contact-checkin-label">
-                                                <input class="contact-input contact-date bg-light" type="date" id="contact-checkin" name="checkin" aria-label="チェックイン日" required>
-                                                <span class="contact-date-sep ofs-5 ofw-regular ols-100 lh-2" aria-hidden="true">〜</span>
-                                                <input class="contact-input contact-date bg-light" type="date" id="contact-checkout" name="checkout" aria-label="チェックアウト日" required>
-                                            </div>
-                                        </div>
+                                    </div>
 
 
-                                        <div class="contact-item smb-40">
-                                            <label class="contact-label d-flex align-items-center ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 spb-8 mb-0" for="contact-message">
-                                                お問合せ内容<span class="contact-required ofs-1 ofw-medium ols-200 lh-1 bg-required">必須</span>
-                                            </label>
-                                            <textarea class="contact-textarea bg-light ofs-3 ols-100 lh-1f" id="contact-message" name="message"
-                                                    placeholder="ご希望やご質問などご自由にお書きください。" required></textarea>
-                                        </div>
+                                    <div class="reservation-item smb-40">
+                                        <label class="reservation-label d-flex align-items-center ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 spb-8 mb-0" for="reservation-message">
+                                            お問合せ内容<span class="reservation-required ofs-1 ofw-medium ols-200 lh-1 bg-required">必須</span>
+                                        </label>
+                                        <textarea class="reservation-textarea bg-light ofs-3 ols-100 lh-1f" id="reservation-message" name="message"
+                                                placeholder="ご希望やご質問などご自由にお書きください。" required></textarea>
+                                    </div>
 
-                                    
-                                        <div class="contact-privacy smb-56">
-                                            <label class="contact-check" for="contact-agree">
-                                                <input class="contact-checkbox" type="checkbox" id="contact-agree" name="agree" required>
-                                                <span class="contact-check-text ofs-5 ofw-regular ols-200 ols-lg-100 lh-1f lh-lg-2">プライバシーポリシーに同意する</span>
-                                            </label>
+                                
+                                    <div class="reservation-privacy smb-56">
+                                        <label class="reservation-check" for="reservation-agree">
+                                            <input class="reservation-checkbox" type="checkbox" id="reservation-agree" name="agree" required>
+                                            <span class="reservation-check-text ofs-5 ofw-regular ols-200 ols-lg-100 lh-1f lh-lg-2">プライバシーポリシーに同意する</span>
+                                        </label>
 
-                                            <p class="contact-note-title ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 mb-0">個人情報の取り扱いについて</p>
-                                            <p class="contact-note-text ofs-5 ofw-regular ols-200 ols-lg-100 lh-1f lh-lg-2">
-                                                当サイトより取得した個人情報はプライバシーポリシーに従い、厳重に管理いたします。<br>
-                                                個人情報保護法に定める例外事項を除き、本人の同意を得ることなく第三者に提供、開示しません。
-                                            </p>
-                                        </div>
+                                        <p class="reservation-note-title ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 mb-0">個人情報の取り扱いについて</p>
+                                        <p class="reservation-note-text ofs-5 ofw-regular ols-200 ols-lg-100 lh-1f lh-lg-2">
+                                            当サイトより取得した個人情報はプライバシーポリシーに従い、厳重に管理いたします。<br>
+                                            個人情報保護法に定める例外事項を除き、本人の同意を得ることなく第三者に提供、開示しません。
+                                        </p>
+                                    </div>
 
-                                    
-                                        <div class="contact-submit smb-120">
-                                            <button class="contact-button ofs-3 ofw-regular ols-200 lh-1f text-black" type="submit">
-                                                送信する
-                                            </button>
-                                        </div>
+                                
+                                    <div class="reservation-submit smb-120">
+                                        <button class="reservation-button ofs-3 ofw-regular ols-200 lh-1f text-black" type="submit">
+                                            送信する
+                                        </button>
+                                    </div>
 
                                 </form>
                             </div>
                         </div>
 
 
-                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
 
             <!-- BANNER -->
