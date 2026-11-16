@@ -1,115 +1,129 @@
-/* CONTACT */
-.contact-required {
-    border-radius: 3px;
-    margin-left: 8px;
-    padding: 3px 6px;
-}
-
-.contact-input,
-.contact-textarea {
-    display: block;
-    width: 100%;
-    padding: 0 12px;
-    border: 0;
-    border-radius: 3px;
-}
-.contact-input { 
-    height: 49px; 
-}
-
-.contact-textarea {
-    height: 186px;
-    padding: 16px;
-    resize: vertical;
-}
-.contact-textarea::placeholder {
-    color: var(--color-muted);
-}
-
-
-.contact-date-range {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-/* override the full-width rule your .contact-input likely has,
-   without touching other inputs */
-.contact-date-range .contact-date {
-  flex: 0 0 1;   /* don't grow, don't shrink, fixed at 156px */
-  width: 100%;
-  min-width: 0;
-}
-
-
-
-.contact-check {
-    display: flex;
-    align-items: center;
-    margin-bottom: 8px;
-    cursor: pointer;
-}
-.contact-checkbox {
-    width: 17px;
-    height: 17px;
-    margin: 0 4px 0 0;
-}
-
-.contact-button {
-    --triangle-size: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 16px;
-    width: 290px;
-    height: 56px;
-    border: 0;
-    cursor: pointer;
-    margin-inline: auto;
-}
-
-.contact-button::after {
-    content: "";
-    flex-shrink: 0;
-    border-style: solid;
-    border-width: var(--triangle-size) 0 var(--triangle-size) calc(var(--triangle-size) * 1.6);
-    border-color: transparent transparent transparent currentColor;
-}
-
-@media (min-width: 992px) {
-        .contact-date-range {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-
-
- .contact-date-range .contact-date {
-  flex: 0 0 156px;   /* don't grow, don't shrink, fixed at 156px */
-  width: 156px;
-  min-width: 0;
-}
-
-
-    .contact-button {
-        width: 416px;
+    /* RESERVATION */
+    .reservation-required {
+        border-radius: 3px;
+        margin-left: 8px;
+        padding: 3px 6px;
     }
-}
+
+    .reservation-input,
+    .reservation-textarea {
+        display: block;
+        width: 100%;
+        padding: 0 12px;
+        border: 0;
+        border-radius: 3px;
+    }
+    .reservation-input { 
+        height: 49px; 
+    }
+
+    .reservation-textarea {
+        height: 186px;
+        padding: 16px;
+        resize: vertical;
+    }
+    .reservation-textarea::placeholder {
+        color: var(--color-muted);
+    }
+
+
+    .reservation-date-range {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .reservation-date-range .reservation-date {
+        flex: 0 0 1;   
+        width: 100%;
+        min-width: 0;
+    }
+
+
+    
+    .reservation-input {
+        position: relative;
+    }
+
+    .reservation-input:invalid::-webkit-datetime-edit {
+        opacity: 0;
+    }
+
+    .reservation-input::-webkit-calendar-picker-indicator {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+
+    .reservation-check {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        cursor: pointer;
+    }
+    .reservation-checkbox {
+        width: 17px;
+        height: 17px;
+        margin: 0 4px 0 0;
+    }
+
+    .reservation-button {
+        --triangle-size: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 16px;
+        width: 290px;
+        height: 56px;
+        border: 0;
+        cursor: pointer;
+        margin-inline: auto;
+    }
+
+    .reservation-button::after {
+        content: "";
+        flex-shrink: 0;
+        border-style: solid;
+        border-width: var(--triangle-size) 0 var(--triangle-size) calc(var(--triangle-size) * 1.6);
+        border-color: transparent transparent transparent currentColor;
+    }
+
+    @media (min-width: 992px) {
+    .reservation-date-range {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
 
 
 
-.contact-date-range {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
+    .reservation-date-range .reservation-date {
+        flex: 0 0 156px;   
+        width: 156px;
+        min-width: 0;
+    }
 
-/* override the full-width rule your .contact-input likely has,
-   without touching other inputs */
-.contact-date-range .contact-date {
-  flex: 0 0 1;   /* don't grow, don't shrink, fixed at 156px */
-  width: 100%;
-  min-width: 0;
-}
+
+        .reservation-button {
+            width: 416px;
+        }
+    }
+
+
+
+    .reservation-date-range {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .reservation-date-range .reservation-date {
+        flex: 0 0 1;   
+        width: 100%;
+        min-width: 0;
+    }
 
