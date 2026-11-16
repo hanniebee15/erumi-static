@@ -19,9 +19,9 @@
 </head>
 <body>
     <!-- header start -->
-     <header class="site-header">
-        <div class="position-fixed top-0 start-0 w-100 header-wrapper">                
-            <div class="container position-relative">              
+    <header class="site-header">
+        <div class="position-fixed top-0 start-0 w-100 header-wrapper">                  
+            <div class="container position-relative">               
                 <div class="row align-items-center spt-40 spt-lg-24">
 
                     <div class="col-auto col-lg-1 header-logo">
@@ -60,6 +60,65 @@
             </div>
         </div>
     </header>
+
+    <!-- Hamburger Menu -->  
+    <div class="fullscreen-menu" id="fullscreen-menu" aria-hidden="true">
+        <div class="container spb-200">
+            <div class="row mx-0 d-flex justify-content-center position-relative">
+                <div class="col-12 px-0">
+                    <div class="row mx-0">
+                        <div class="col-12 d-flex align-items-center justify-content-between spt-40 spt-lg-24 fullscreen-menu-header">
+                            <a href="index.html" class="fullscreen-menu-logo link-hover">
+                                <img src="assets/images/common/erumi-logo.svg" alt="ERUMI">
+                            </a>
+                            <button type="button" class="menu-close link-hover" aria-label="Close menu">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>  
+                    </div>   
+                    <div class="row d-flex justify-content-center mx-0">
+                        <div class="col-12 col-lg-8 px-0 spt-48 spt-lg-190">
+                            <div class="row mb-lg-3 spb-32 spb-lg-72 mx-0">                                                  
+                                <div class="col-12 hamburger-nav">
+                                    <ul class="d-flex flex-column flex-lg-row flex-wrap align-items-md-start list-unstyled ff-mincho text-white ofs-lg-13 lh-2f lh-lg-1f ols-400 ols-lg-200 spb-32 spb-lg-72 mb-0 custom-burger-nav">
+                                        <li class="link-hover spb-8 spb-lg-0"><a href="index.html" class="">TOP</a></li>
+                                        <li class="link-hover spb-8 spb-lg-0"><a href="about.html">ABOUT</a></li>
+                                        <li class="link-hover spb-8 spb-lg-0"><a href="about_your_stay.html">ご滞在について</a></li>
+                                        <li class="link-hover spb-8 spb-lg-0"><a href="stories.html">よみもの</a></li>
+                                        <li class="link-hover spb-8 spb-lg-0"><a href="news.html">お知らせ</a></li>
+                                        <li class="link-hover spb-8 spb-lg-0"><a href="access.html">交通アクセス</a></li>
+                                        <li class="link-hover spb-lg-0"><a href="faq.html">よくある質問</a></li>
+                                    </ul>                               
+                                    <div class="d-flex flex-column flex-lg-row gap-2 gap-lg-3 custom-btn-wrapper">
+                                        <div class="col-12 col-lg-6 px-3 text-center custom-btn-hamburger">
+                                            <a href="contact.html" class="d-block bg-white text-black link-hover lh-1f ols-200">お問い合わせ</a>
+                                        </div>
+                                        <div class="col-12 col-lg-6 px-3 text-center custom-btn-hamburger">
+                                            <a href="reservation.html" class="d-block bg-white text-black link-hover lh-1f ols-200">予約する</a>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="row d-flex align-items-end justify-content-between mx-0">
+                                <div class="col-7 px-0">
+                                    <ul div class="d-flex flex-column flex-xxl-row list-unstyled gap-4 mb-0 custom-nav-bottom">
+                                        <li class="link-hover">プライバシーポリシー</li>
+                                        <li class="link-hover">クッキーポリシー</li>
+                                        <li class="link-hover">宿泊約款</li>
+                                    </ul>                                
+                                </div>
+                                <div class="col-5 text-end spt-40 spt-xl-0">
+                                    <a href="#" class="">EN/JP</a>
+                                </div>
+                            </div>                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Hamburger Menu -->
         
     <!-- Breadcrumb -->
     <nav class="breadcrumb-section spt-152 spt-lg-128" aria-label="breadcrumb">
@@ -75,125 +134,128 @@
         </div>
     </nav>
 
+    <main id="MainContent">
 
-    <main>
+        <section class="notfound-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
 
-            <section class="notfound-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 col-lg-10 offset-lg-1 spt-80 spt-lg-120">
 
-                            <div class="row">
-                                <div class="col-12 col-lg-10 offset-lg-1 spt-80 spt-lg-120">
+                                <h1 class="notfound-title ff-shippori-mincho ofs-21 ofw-regular ols-200 lh-1f text-center spb-32 mb-0">
+                                    404 Not Found
+                                </h1>
 
-                                    <h1 class="notfound-title ff-shippori-mincho ofs-21 ofw-regular ols-200 lh-1f text-center spb-32 mb-0">
-                                        404 Not Found
-                                    </h1>
-
-                                    <div class="notfound-text ofs-5 ofw-regular ols-100 lh-2 text-start text-lg-center spb-56">
-                                        <p class="notfound-text-item mb-0">
-                                            ページが見つかりませんでした<br>
-                                            お探しのページは、移動または削除されたか、URLが間違っている可能性があります。<br class="d-none d-lg-block">
-                                            恐れ入りますが、トップページから改めてお探しください。
-                                        </p>
-                                    </div>
-
+                                <div class="notfound-text ofs-5 ofw-regular ols-100 lh-2 text-start text-lg-center spb-56">
+                                    <p class="notfound-text-item mb-0">
+                                        ページが見つかりませんでした<br>
+                                        お探しのページは、移動または削除されたか、URLが間違っている可能性があります。<br class="d-none d-lg-block">
+                                        恐れ入りますが、トップページから改めてお探しください。
+                                    </p>
                                 </div>
-                            </div>
 
-                            <div class="row">
-                                <div class="col-12 col-lg-4 offset-lg-4 text-center spb-80 spb-lg-120">
-                                    <a href="index.html" class="thanks-button d-inline-flex d-lg-flex align-items-center justify-content-center column-gap-4 ofs-5 ofw-regular ols-200 lh-1f bg-white text-black link-hover">
-                                        <span class="thanks-button-text">TOPに戻る</span>
-                                        <span class="thanks-button-arrow d-inline-block" aria-hidden="true"></span>
-                                    </a>
-                                </div>
                             </div>
-
                         </div>
+
+                        <div class="row">
+                            <div class="col-12 col-lg-4 offset-lg-4 text-center spb-80 spb-lg-120">
+                                <a href="index.html" class="thanks-button d-inline-flex d-lg-flex align-items-center justify-content-center column-gap-4 ofs-5 ofw-regular ols-200 lh-1f bg-white text-black link-hover">
+                                    <span class="thanks-button-text">TOPに戻る</span>
+                                    <span class="thanks-button-arrow d-inline-block" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- BANNER -->
-            <section class="banner-section position-relative">
-                <div class="container-fluid px-0">
-                    <div class="row mx-0">
-                        <div class="col-12 px-0 position-relative">
-                            <picture>
-                                <source media="(min-width:768px)"
-                                        srcset="assets/images/common/banner_background_pc.jpg">
-                                <img src="assets/images/common/banner_background_sp.jpg"
-                                    alt="えるみの店内の様子"
-                                    class="d-block w-100 h-100 banner-img"
-                                    fetchpriority="high">
-                            </picture>
-                            <div class="row mx-0">
-                                <div class="col-12 px-0">
-                                    <div class="banner-overlay-content text-center text-white mx-0">
-                                        <h1 class="ofs-21 ofs-lg-29 ols-300 lh-1f text-white spb-16 mb-0">ご 予 約</h1>      
-                                        <p class="hero-description ofs-5 ols-200 lh-1f text-white spb-32 spb-lg-40 mb-0">
-                                            えるみのご予約はこちらの <br class="d-md-none">
-                                            フォームからのみ<br class="d-none d-md-block"> 承っております。  
-                                        </p>                        
-                                        <div class="btn-reservation-wrapper">
-                                            <a href="#" class="btn-reservation ff-mincho ofs-3 ols-200 lh-1f text-white link-hover">予約する</a>
-                                        </div>
+        <!-- BANNER -->
+        <section class="banner-section position-relative">
+            <div class="container-fluid px-0">
+                <div class="row mx-0">
+                    <div class="col-12 px-0 position-relative">
+                        <picture>
+                            <source media="(min-width:768px)"
+                                    srcset="assets/images/common/banner_background_pc.jpg">
+                            <img src="assets/images/common/banner_background_sp.jpg"
+                                alt="えるみの店内の様子"
+                                class="d-block w-100 h-100 banner-img"
+                                fetchpriority="high">
+                        </picture>
+                        <div class="row mx-0">
+                            <div class="col-12 px-0">
+                                <div class="banner-overlay-content text-center text-white mx-0">
+                                    <h1 class="ofs-21 ofs-lg-29 ols-300 lh-1f text-white spb-16 mb-0">ご 予 約</h1>      
+                                    <p class="hero-description ofs-5 ols-200 lh-1f text-white spb-32 spb-lg-40 mb-0">
+                                        えるみのご予約はこちらの <br class="d-md-none">
+                                        フォームからのみ<br class="d-none d-md-block"> 承っております。  
+                                    </p>                        
+                                    <div class="btn-reservation-wrapper">
+                                        <a href="reservation.html" class="btn-reservation ff-mincho ofs-3 ols-200 lh-1f text-white link-hover">予約する</a>
                                     </div>
                                 </div>
-                            </div>           
-                        </div>
-                    </div>    
-                </div>
-            </section>
+                            </div>
+                        </div>           
+                    </div>
+                </div>    
+            </div>
+        </section>
+
     </main>
  
-    <footer class="site-footer py-5">
-                <div class="container">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-12 col-lg-10">
-                            <div class="row mb-4 mb-lg-3 nav-section-wrapper spb-56 mx-0">                                                  
-                                <div class="col-12 col-md-3 col-md-gx-1 d-flex justify-content-center justify-content-md-start ps-lg-5 spb-56 spb-lg-0">  
-                                    <figure class="m-0 footer-logo">
-                                        <img src="assets/images/common/erumi-logo.svg" alt="erumi">
-                                    </figure>
-                                </div>
-                                <div class="col-12 col-md-7 footer-nav">
-                                <div class="d-flex flex-column flex-lg-row flex-wrap align-items-md-start opb-6 spb-md-48 custom-nav-flex">
-                                        <a href="index.html" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">TOP</a>
-                                        <a href="about.html" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">ABOUT</a>
-                                        <a href="#" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">ご滞在について</a>
-                                        <a href="#" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">よみもの</a>
-                                        <a href="news.html" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">お知らせ</a>
-                                        <a href="#" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">交通アクセス</a>
-                                        <a href="faq.html" class="link-hover spb-lg-0 ff-mincho lh-1f ols-200 text-white">よくある質問</a>
-                                    </div>
-                                    <div class="d-flex flex-column flex-lg-row justify-content-md-start gap-3">
-                                        <a href="#" class="text-nowrap text-center btn-footer-action bg-white text-black link-hover lh-1f ols-200">お問い合わせ</a>
-                                        <a href="#" class="text-nowrap text-center btn-footer-action bg-white text-black link-hover lh-1f ols-200">予約する</a>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="row align-items-start text-md-start">
-                                <div class="col-12 col-md-8">
-                                    <div class="d-flex flex-column flex-md-row justify-content-md-start gap-2 gap-md-4 footer-legal spb-40 spb-md-16 opb-sm-">
-                                        <a href="#" class="ff-mincho ofs-3 lh-1f ols-200 text-white link-hover">プライバシーポリシー</a>
-                                        <a href="#" class="ff-mincho ofs-3 lh-1f ols-200 text-white link-hover">クッキーポリシー</a>
-                                        <a href="#" class="ff-mincho ofs-3 lh-1f ols-200 text-white link-hover">宿泊約款</a>
-                                    </div>
-                                    <div class="ff-mincho ofs-3 lh-1f ols-200 text-white pb-2 pb-lg-0">
-                                        兵庫県赤穂市尾崎730
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-4 text-md-end ff-mincho ofs-3  lh-1f ols-200 text-white">
-                                    ©2026 ERUMI
-                                </div>
+    <footer class="site-footer spt-80 spt-lg-120 spb-40 spb-lg-48">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="row mb-4 mb-lg-3 nav-section-wrapper spb-56 mx-0">                                                  
+                        
+                        <div class="col-12 col-md-3 col-md-gx-1 d-flex justify-content-center justify-content-md-start ps-lg-5 spb-56 spb-lg-0">  
+                            <figure class="m-0 footer-logo">
+                                <img src="assets/images/common/erumi-logo.svg" alt="erumi">
+                            </figure>
+                        </div>
+
+                        <div class="col-12 col-md-8 ps-lg-5 footer-nav">
+                            <ul class="d-flex flex-column flex-lg-row flex-wrap align-items-md-start list-unstyled ff-mincho lh-1f ols-200 text-white opb-6 ps-lg-3 spb-md-48 custom-nav-flex">
+                                <li class="link-hover spb-32 spb-lg-0"> <a href="index.html">TOP</a> </li>
+                                <li class="link-hover spb-32 spb-lg-0"> <a href="about.html">ABOUT</a> </li>
+                                <li class="link-hover spb-32 spb-lg-0"> <a href="about_your_stay.html">ご滞在について</a> </li>
+                                <li class="link-hover spb-32 spb-lg-0"> <a href="stories.html">よみもの</a> </li>
+                                <li class="link-hover spb-32 spb-lg-0"> <a href="news.html">お知らせ</a> </li>
+                                <li class="link-hover spb-32 spb-lg-0"> <a href="access.html">交通アクセス</a> </li>
+                                <li class="link-hover spb-32 spb-lg-0"> <a href="faq.html">よくある質問</a> </li>                              
+                            </ul>
+                            <div class="d-flex flex-column flex-lg-row justify-content-md-start ps-lg-3 gap-3">
+                                <a href="contact.html" class="text-nowrap text-center btn-footer-action bg-white text-black link-hover lh-1f ols-200">お問い合わせ</a>
+                                <a href="reservation.html" class="text-nowrap text-center btn-footer-action bg-white text-black link-hover lh-1f ols-200">予約する</a>
                             </div>
                         </div>
                     </div>
+
+                    <div class="row align-items-start text-md-start">
+                        <div class="col-12 col-md-8">
+                            <div class="d-flex flex-column flex-md-row justify-content-md-start gap-2 gap-md-4 footer-legal spb-40 spb-md-16 opb-sm-">
+                                <a href="privacy-policy.html" class="ff-mincho ofs-3 lh-1f ols-200 text-white link-hover">プライバシーポリシー</a>
+                                <a href="cookie_policy.html" class="ff-mincho ofs-3 lh-1f ols-200 text-white link-hover">クッキーポリシー</a>
+                                <a href="accommodation_policy.html" class="ff-mincho ofs-3 lh-1f ols-200 text-white link-hover">宿泊約款</a>
+                            </div>
+                            <div class="ff-mincho ofs-3  lh-1f ols-200 text-white pb-2 pb-lg-0">
+                                兵庫県赤穂市尾崎730
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 text-md-end ff-mincho ofs-3  lh-1f ols-200 text-white">
+                            ©2026 ERUMI
+                        </div>
+                    </div>
+
                 </div>
-            </footer>
+            </div>
+        </div>
+    </footer>
 
 <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
