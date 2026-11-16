@@ -13,7 +13,7 @@
 }
 /* --- INFO LIST & DIVIDERS --- */
 .erumi-access-info-list {
-    width: 100%;
+    width: 100%;                
     max-width: 100%;
     border-color: rgba(247, 244, 238, 0.25) !important;
     box-sizing: border-box;
@@ -31,23 +31,27 @@
     overflow-wrap: break-word;
 }
 
+
 /* --- MAP WRAPPER --- */
 .erumi-access-map-wrap {
-    position: relative;
     width: 100%;
-    max-width: 100%;
-    height: clamp(260px, 35vw, 450px);
+    height: clamp(333px, 40vw, 333px);
     overflow: hidden;
-    border: 1px solid rgba(247, 244, 238, 0.15);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-    box-sizing: border-box;
+    position: relative;
 }
 
 .erumi-access-map-wrap iframe {
-    display: block;
     width: 100%;
     height: 100%;
+    display: block;
     border: 0;
+}
+
+@media (min-width: 992px) {
+    .px-lg-12 {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
 }
 
 
