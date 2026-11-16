@@ -125,7 +125,7 @@
 .spb-192 { padding-bottom: 12rem !important; }
 .spb-200 { padding-bottom: 12.5rem !important; }
 
-@media (min-width: 576px) {
+@media (min-aaidth: 576px) {
   .smt-sm-0 { margin-top: 0 !important; }
   .smt-sm-2 { margin-top: 0.125rem !important; }
   .smt-sm-4 { margin-top: 0.25rem !important; }
