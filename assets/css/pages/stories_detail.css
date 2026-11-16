@@ -1,0 +1,30 @@
+/* STORIES_DETAIL */
+.stories-detail-card {
+        margin: 0 auto;
+        width: 85%; 
+}
+
+.stories-detail-other-more-link {
+    --triangle-size: 4px;
+    text-decoration: none;
+}
+
+.stories-detail-other-more-link::after {
+    content: "";
+    flex-shrink: 0;
+    border-style: solid;
+    border-width: var(--triangle-size) 0 var(--triangle-size) calc(var(--triangle-size) * 1.6);
+    border-color: transparent transparent transparent currentColor;
+}
+
+@media (min-width: 992px) {
+
+     .stories-detail-card {
+        flex: 0 0 auto;
+        width: 33%; 
+    }
+    .stories-title {
+        word-break: normal;
+    }
+
+}
