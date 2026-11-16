@@ -11,25 +11,6 @@
 .custom-border-bottom{
     border-bottom-width: 0.5px !important;
 }
-/* --- INFO LIST & DIVIDERS --- */
-.erumi-access-info-list {
-    width: 100%;
-    max-width: 100%;
-    border-color: rgba(247, 244, 238, 0.25) !important;
-    box-sizing: border-box;
-}
-
-.erumi-access-info-item {
-    width: 100%;
-    max-width: 100%;
-    border-color: rgba(247, 244, 238, 0.2) !important;
-    box-sizing: border-box;
-}
-
-.erumi-access-info-detail {
-    min-width: 0;
-    overflow-wrap: break-word;
-}
 
 /* --- MAP WRAPPER --- */
 .erumi-access-map-wrap {
