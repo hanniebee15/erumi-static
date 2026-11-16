@@ -1,45 +1,67 @@
-
-
-
-.contact-header-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-
-/* Label & Red '必須' Badge */
-.contact-badge {
-    background-color: var(--color-required);
-    border-radius: 2px;
+/* CONTACT */
+.contact-required {
+    border-radius: 3px;
+    margin-left: 8px;
     padding: 3px 6px;
 }
 
-
-/* Checkbox Alignment & Styling */
-.contact-checkbox {
-    background-color: var(--color-white);
-    border: 1px solid  var(--color-white);
-    border-radius: 2px;
-    cursor: pointer;
-    margin-top: 0.15rem;
+.contact-input,
+.contact-textarea {
+    display: block;
+    width: 100%;
+    padding: 0 12px;
+    border: 0;
+    border-radius: 3px;
+}
+.contact-input { 
+    height: 49px; 
 }
 
-/* Submit Button */
-.contact-submit-btn {
-    background-color: var(--color-white);
-    border: none;
-    border-radius: 2px;
-    padding: 12px 48px;
-    display: inline-flex;
+.contact-textarea {
+    height: 186px;
+    padding: 16px;
+    resize: vertical;
+}
+.contact-textarea::placeholder {
+    color: var(--color-muted);
+}
+
+
+.contact-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.contact-checkbox {
+    width: 17px;
+    height: 17px;
+    margin: 0 4px 0 0;
+}
+
+.contact-button {
+    --triangle-size: 4px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 260px;
-    transition: all 0.3s ease;
+    column-gap: 16px;
+    width: 290px;
+    height: 56px;
+    border: 0;
+    cursor: pointer;
+    margin-inline: auto;
 }
 
-.contact-submit-btn:hover {
-    background-color: var(--color-white);
-    transform: translateY(-1px);
+.contact-button::after {
+    content: "";
+    flex-shrink: 0;
+    border-style: solid;
+    border-width: var(--triangle-size) 0 var(--triangle-size) calc(var(--triangle-size) * 1.6);
+    border-color: transparent transparent transparent currentColor;
 }
 
+@media (min-width: 992px) {
+    .contact-button {
+        width: 416px;
+    }
+}
