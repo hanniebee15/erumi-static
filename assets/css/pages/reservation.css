@@ -19,7 +19,7 @@
 
     .reservation-textarea {
         height: 186px;
-        padding: 16px;
+        padding: 16px 8px;
         resize: vertical;
     }
     .reservation-textarea::placeholder {
