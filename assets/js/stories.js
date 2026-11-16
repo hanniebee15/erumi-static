@@ -1,48 +1,92 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const pagination = document.getElementById('pagination');
-  if (!pagination) return;
+(() => {
+    const section = document.querySelector('.stories-section');
+    const list = section && section.querySelector('.stories-list');
+    const nav = section && section.querySelector('.stories-pagination');
+    if (!list || !nav) return;
 
-  const pageItems = pagination.querySelectorAll('.page-item:not(:first-child):not(:last-child)');
-  const prevBtn = pagination.querySelector('.prev-btn');
-  const nextBtn = pagination.querySelector('.next-btn');
+    const pageLinks = Array.from(nav.querySelectorAll('.stories-pagination-item'));
+    const prevLink = nav.querySelector('[data-nav="prev"]');
+    const nextLink = nav.querySelector('[data-nav="next"]');
+    const totalPages = parseInt(nav.dataset.totalPages, 10) || pageLinks.length;
 
-  let currentPage = 1;
-  const totalPages = pageItems.length;
+    let currentPage = 1;
 
-  function updatePagination(newPage) {
-    if (newPage < 1 || newPage > totalPages) return;
-    currentPage = newPage;
+    const clamp = (n) => Math.min(Math.max(n, 1), totalPages);
 
-    pageItems.forEach((item, index) => {
-      if (index + 1 === currentPage) {
-        item.classList.add('active');
-      } else {
-        item.classList.remove('active');
-      }
+    const getPageFromUrl = () => {
+        const p = parseInt(new URLSearchParams(location.search).get('page'), 10);
+        return clamp(Number.isNaN(p) ? 1 : p);
+    };
+
+    const renderItems = (page) => {
+        list.dataset.page = page;
+    };
+
+    const updatePagination = (page) => {
+        pageLinks.forEach((link) => {
+            const isCurrent = Number(link.dataset.page) === page;
+            link.classList.toggle('is-current', isCurrent);
+            if (isCurrent) {
+                link.setAttribute('aria-current', 'page');
+            } else {
+                link.removeAttribute('aria-current');
+            }
+        });
+
+        const setArrow = (link, target, disabled) => {
+            link.href = `?page=${target}`;
+            link.classList.toggle('is-disabled', disabled);
+            link.setAttribute('aria-disabled', String(disabled));
+            link.tabIndex = disabled ? -1 : 0;
+        };
+
+        setArrow(prevLink, clamp(page - 1), page === 1);
+        setArrow(nextLink, clamp(page + 1), page === totalPages);
+    };
+
+    const goToPage = (page, { push = true, scroll = true } = {}) => {
+        page = clamp(page);
+        if (page === currentPage && !scroll) return;
+
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        list.classList.add('is-changing');
+        setTimeout(() => {
+            currentPage = page;
+            renderItems(page);
+            updatePagination(page);
+            list.classList.remove('is-changing');
+        }, reduceMotion ? 0 : 200);
+
+        if (push) {
+            history.pushState({ page }, '', `?page=${page}`);
+        }
+        if (scroll) {
+            section.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+        }
+    };
+
+    nav.addEventListener('click', (e) => {
+        const link = e.target.closest('a');
+        if (!link || !nav.contains(link)) return;
+        e.preventDefault();
+        if (link.classList.contains('is-disabled')) return;
+
+        if (link.dataset.page) {
+            goToPage(Number(link.dataset.page));
+        } else if (link.dataset.nav === 'prev') {
+            goToPage(currentPage - 1);
+        } else if (link.dataset.nav === 'next') {
+            goToPage(currentPage + 1);
+        }
     });
 
-    // Handle scroll to top of section smoothly on page change
-    document.querySelector('.stories-section').scrollIntoView({ behavior: 'smooth' });
-  }
-
-  pageItems.forEach((item, index) => {
-    item.addEventListener('click', (e) => {
-      e.preventDefault();
-      updatePagination(index + 1);
+    window.addEventListener('popstate', () => {
+        goToPage(getPageFromUrl(), { push: false, scroll: false });
     });
-  });
 
-  if (prevBtn) {
-    prevBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      updatePagination(currentPage - 1);
-    });
-  }
-
-  if (nextBtn) {
-    nextBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      updatePagination(currentPage + 1);
-    });
-  }
-});
+    currentPage = getPageFromUrl();
+    renderItems(currentPage);
+    updatePagination(currentPage);
+    history.replaceState({ page: currentPage }, '', location.search || '?page=1');
+})();
