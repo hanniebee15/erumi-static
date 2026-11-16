@@ -21,8 +21,8 @@
 </head>
 <body>
     <!-- header start -->
-     <header class="site-header">
-        <div class="position-fixed top-0 start-0 w-100 header-wrapper">               
+    <header class="site-header">
+        <div class="position-fixed top-0 start-0 w-100 header-wrapper">                  
             <div class="container position-relative">               
                 <div class="row align-items-center spt-40 spt-lg-24">
 
@@ -40,6 +40,7 @@
                             <li class="nav-item link-hover"><a href="stories.html">よみもの</a></li>
                             <li class="nav-item link-hover"><a href="news.html">お知らせ</a></li>
                             <li class="nav-item link-hover"><a href="access.html">交通アクセス</a></li>
+                            <li class="nav-item link-hover"><a href="faq.html">よくあるご質問</a></li>
                         </ul>
                     </div>
 
@@ -62,86 +63,57 @@
         </div>
     </header>
 
-    <!-- Hamburger Menu -->
-    <div class="container px-0 mx-0">
-        <div class="row d-flex justify-content-center px-0 mx-0">
-            <div class="col-12 px-0">
-                <div class="fullscreen-menu" id="fullscreen-menu" aria-hidden="true">
-                    <div class="fullscreen-menu-inner spt-176">
-                        <div class="fullscreen-menu-header">
-                            <a href="#" class="fullscreen-menu-logo">
+    <!-- Hamburger Menu -->  
+    <div class="fullscreen-menu" id="fullscreen-menu" aria-hidden="true">
+        <div class="container spb-200">
+            <div class="row mx-0 d-flex justify-content-center position-relative">
+                <div class="col-12 px-0">
+                    <div class="row mx-0">
+                        <div class="col-12 d-flex align-items-center justify-content-between spt-40 spt-lg-24 fullscreen-menu-header">
+                            <a href="index.html" class="fullscreen-menu-logo link-hover">
                                 <img src="assets/images/common/erumi-logo.svg" alt="ERUMI">
                             </a>
-                            <button type="button" class="menu-close" aria-label="Close menu">
+                            <button type="button" class="menu-close link-hover" aria-label="Close menu">
                                 <span></span>
                                 <span></span>
                             </button>
-                        </div>
-                        <nav class="fullscreen-menu-nav smb-72" aria-label="Main navigation">
-                        <div class="container px-0 mx-0">
-                            <div class="row justify-content-center">
-                            <!-- Left Column -->
-                            <div class="col-12 col-md-10 col-lg-8">
-                                <div class="menu-nav-column ofs-13 ols-200 spb-40">
-                                <a href="index.html">TOP</a>
-                                <a href="about.html">ABOUT</a>
-                                <a href="about_your_stay.html">ご滞在について</a>
-                                <a href="stories.html">よみもの</a>
+                        </div>  
+                    </div>   
+                    <div class="row d-flex justify-content-center mx-0">
+                        <div class="col-12 col-lg-8 px-0 spt-48 spt-lg-190">
+                            <div class="row mb-lg-3 spb-32 spb-lg-72 mx-0">                                                  
+                                <div class="col-12 hamburger-nav">
+                                    <ul class="d-flex flex-column flex-lg-row flex-wrap align-items-md-start list-unstyled ff-mincho text-white ofs-lg-13 lh-2f lh-lg-1f ols-400 ols-lg-200 spb-32 spb-lg-72 mb-0 custom-burger-nav">
+                                        <li class="link-hover spb-8 spb-lg-0"><a href="index.html" class="">TOP</a></li>
+                                        <li class="link-hover spb-8 spb-lg-0"><a href="about.html">ABOUT</a></li>
+                                        <li class="link-hover spb-8 spb-lg-0"><a href="about_your_stay.html">ご滞在について</a></li>
+                                        <li class="link-hover spb-8 spb-lg-0"><a href="stories.html">よみもの</a></li>
+                                        <li class="link-hover spb-8 spb-lg-0"><a href="news.html">お知らせ</a></li>
+                                        <li class="link-hover spb-8 spb-lg-0"><a href="access.html">交通アクセス</a></li>
+                                        <li class="link-hover spb-lg-0"><a href="faq.html">よくある質問</a></li>
+                                    </ul>                               
+                                    <div class="d-flex flex-column flex-lg-row gap-2 gap-lg-3 custom-btn-wrapper">
+                                        <div class="col-12 col-lg-6 px-3 text-center custom-btn-hamburger">
+                                            <a href="contact.html" class="d-block bg-white text-black link-hover lh-1f ols-200">お問い合わせ</a>
+                                        </div>
+                                        <div class="col-12 col-lg-6 px-3 text-center custom-btn-hamburger">
+                                            <a href="reservation.html" class="d-block bg-white text-black link-hover lh-1f ols-200">予約する</a>
+                                        </div>
+                                    </div>                                    
                                 </div>
                             </div>
-                            </div>
-                            <!-- Right Column -->
-                            <div class="row d-flex justify-content-center">
-                            <div class="col-12 col-md-10 col-lg-8">
-                                <div class="menu-nav-column-2 text-start ofs-13 ols-200">
-                                <a href="news.html">お知らせ</a>
-                                <a href="access.html">交通アクセス</a>
-                                <a href="faq.html">よくあるご質問</a>
+                            <div class="row d-flex align-items-end justify-content-between mx-0">
+                                <div class="col-7 px-0">
+                                    <ul div class="d-flex flex-column flex-xxl-row list-unstyled gap-4 mb-0 custom-nav-bottom">
+                                        <li class="link-hover">プライバシーポリシー</li>
+                                        <li class="link-hover">クッキーポリシー</li>
+                                        <li class="link-hover">宿泊約款</li>
+                                    </ul>                                
                                 </div>
-                            </div>
-                            </div>
-                        </div>
-                        </nav>
-                        <!-- Mobile nav -->
-                        <nav class="mobile-menu-nav lh-1f ols-20" aria-label="Main navigation">
-                            <div class="menu-nav-column ofs-5 ofw-regular lh-2f ols-400">
-                                <a href="index.html">TOP</a>
-                                <a href="about.html">ABOUT</a>
-                            </div>
-                            <div class="menu-nav-column ofs-5 ofw-regular lh-2f ols-400">
-                                <a href="about_your_stay.html">ご滞在について</a>
-                                <a href="stories.html">よみもの</a>
-                            </div>
-                            <div class="menu-nav-column ofs-5 ofw-regular lh-2f ols-400">
-                                <a href="news.html">お知らせ</a>
-                                <a href="access.html">交通アクセス</a>
-                            </div>
-                            <div class="menu-nav-column ofs-5 ofw-regular lh-2f ols-400">
-                                <a href="faq.html">よくあるご質問</a>
-                            </div>
-                        </nav>
-
-                        <div class="container px-0">
-                        <div class="row d-flex justify-content-center mx-0">
-                            <div class="col-12 col-md-10 col-lg-8">
-                            <div class="fullscreen-menu-cta smb-32">
-                                <a href="contact.html" class="menu-cta-button ofs-9 ofs-lg-13">お問い合わせ</a>
-                                <a href="reservation.html" class="menu-cta-button ofs-9 ofs-lg-13">予約する</a>
-                            </div>
-                            <div class="fullscreen-menu-footer">
-                                    <div class="menu-footer-links d-flex justify-content-between ofs-3">
-                                        <a href="privacy.html">プライバシーポリシー</a>
-                                        <a href="cookie.html">クッキーポリシー</a>
-                                        <a href="terms.html">宿泊約款</a>
-                                    </div>
-                                <div class="menu-language ols-200">
-                                    <a href="#">EN</a>
-                                    <span>/</span>
-                                    <a href="#">JP</a>
+                                <div class="col-5 text-end spt-40 spt-xl-0">
+                                    <a href="#" class="">EN/JP</a>
                                 </div>
-                            </div>
-                            </div>
-                        </div>
+                            </div>                          
                         </div>
                     </div>
                 </div>
@@ -165,198 +137,199 @@
     </nav>
 
 
-    <main>
-            <!-- RESERVATION -->
-            <section class="reservation-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
+    <main id="MainContent">
+        <!-- RESERVATION -->
+        <section class="reservation-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
 
-                            <div class="row align-items-center">
-                                <div class="col-12 col-lg-8 offset-lg-1 spt-80 spb-80">
-                                    <p class="title-page-en ff-shippori-mincho ofw-regular ofs-5 ofs-lg-13 ols-200 lh-1f smb-lg-24">
-                                        Reservation
-                                    </p>
-                                    <h1 class="title-page-jp ofs-21 ofs-lg-37 ofw-regular ols-200 ols-lg-400 lh-1f mb-0">
-                                        ご予約フォーム
-                                    </h1>
-                                </div>
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg-8 offset-lg-1 spt-80 spb-80">
+                                <p class="title-page-en ff-shippori-mincho ofw-regular ofs-5 ofs-lg-13 ols-200 lh-1f smb-lg-24">
+                                    Reservation
+                                </p>
+                                <h1 class="title-page-jp ofs-21 ofs-lg-37 ofw-regular ols-200 ols-lg-400 lh-1f mb-0">
+                                    ご予約フォーム
+                                </h1>
                             </div>
-
-                            <div class="row">
-                                <div class="col-12 col-lg-10 offset-lg-1">
-                                    <p class="contact-lead ofs-5 ofw-regular ols-200 ols-lg-100 lh-1f lh-lg-2 smb-56">
-                                        ご質問やご相談がございましたら、以下のフォームに必要事項を入力しお気軽にお問い合わせください。
-                                    </p>
-
-                                    
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-lg-8 offset-lg-2">
-                                    <form class="contact-form" action="" method="post">
-
-                                        <div class="contact-item smb-40">
-                                            <label class="contact-label d-flex align-items-center ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 spb-8 mb-0" for="contact-name">
-                                                お名前<span class="contact-required ofs-1 ofw-medium ols-200 lh-1 bg-required">必須</span>
-                                            </label>
-                                            <input class="contact-input bg-light" type="text" id="contact-name" name="name" required>
-                                        </div>
-
-                                        <div class="contact-item smb-40">
-                                            <label class="contact-label d-flex align-items-center ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 spb-8 mb-0" for="contact-kana">
-                                                お名前(フリガナ)<span class="contact-required ofs-1 ofw-medium ols-200 lh-1 bg-required">必須</span>
-                                            </label>
-                                            <input class="contact-input bg-light" type="text" id="contact-kana" name="kana" required>
-                                        </div>
-
-                                        <div class="contact-item smb-40">
-                                            <label class="contact-label d-flex align-items-center ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 spb-8 mb-0" for="contact-email">
-                                                メールアドレス<span class="contact-required ofs-1 ofw-medium ols-200 lh-1 bg-required">必須</span>
-                                            </label>
-                                            <input class="contact-input bg-light" type="email" id="contact-email" name="email" required>
-                                        </div>
-
-                                        <div class="contact-item smb-40">
-                                            <label class="contact-label d-flex align-items-center ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 spb-8 mb-0" for="contact-tel">
-                                                電話番号<span class="contact-required ofs-1 ofw-medium ols-200 lh-1 bg-required">必須</span>
-                                            </label>
-                                            <input class="contact-input bg-light" type="tel" id="contact-tel" name="tel" required>
-                                        </div>
-
-                                        <div class="contact-item smb-40">
-                                            <label class="contact-label d-flex align-items-center ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 spb-8 mb-0" for="contact-checkin">
-                                                ご宿泊希望日<span class="contact-required ofs-1 ofw-medium ols-200 lh-1 bg-required">必須</span>
-                                            </label>
-                                            <div class="contact-date-range" role="group" aria-labelledby="contact-checkin-label">
-                                                <input class="contact-input contact-date bg-light" type="date" id="contact-checkin" name="checkin" aria-label="チェックイン日" required>
-                                                <span class="contact-date-sep ofs-5 ofw-regular ols-100 lh-2" aria-hidden="true">〜</span>
-                                                <input class="contact-input contact-date bg-light" type="date" id="contact-checkout" name="checkout" aria-label="チェックアウト日" required>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="contact-item smb-40">
-                                            <label class="contact-label d-flex align-items-center ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 spb-8 mb-0" for="contact-message">
-                                                お問合せ内容<span class="contact-required ofs-1 ofw-medium ols-200 lh-1 bg-required">必須</span>
-                                            </label>
-                                            <textarea class="contact-textarea bg-light ofs-3 ols-100 lh-1f" id="contact-message" name="message"
-                                                    placeholder="ご希望やご質問などご自由にお書きください。" required></textarea>
-                                        </div>
-
-                                    
-                                        <div class="contact-privacy smb-56">
-                                            <label class="contact-check" for="contact-agree">
-                                                <input class="contact-checkbox" type="checkbox" id="contact-agree" name="agree" required>
-                                                <span class="contact-check-text ofs-5 ofw-regular ols-200 ols-lg-100 lh-1f lh-lg-2">プライバシーポリシーに同意する</span>
-                                            </label>
-
-                                            <p class="contact-note-title ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 mb-0">個人情報の取り扱いについて</p>
-                                            <p class="contact-note-text ofs-5 ofw-regular ols-200 ols-lg-100 lh-1f lh-lg-2">
-                                                当サイトより取得した個人情報はプライバシーポリシーに従い、厳重に管理いたします。<br>
-                                                個人情報保護法に定める例外事項を除き、本人の同意を得ることなく第三者に提供、開示しません。
-                                            </p>
-                                        </div>
-
-                                    
-                                        <div class="contact-submit smb-120">
-                                            <button class="contact-button ofs-3 ofw-regular ols-200 lh-1f text-black" type="submit">
-                                                送信する
-                                            </button>
-                                        </div>
-
-                                    </form>
-                                </div>
-                            </div>
-
-
                         </div>
-                    </div>
-                </div>
-            </section>
 
+                        <div class="row">
+                            <div class="col-12 col-lg-10 offset-lg-1">
+                                <p class="contact-lead ofs-5 ofw-regular ols-200 ols-lg-100 lh-1f lh-lg-2 smb-56">
+                                    ご質問やご相談がございましたら、以下のフォームに必要事項を入力しお気軽にお問い合わせください。
+                                </p>
 
-            <!-- BANNER -->
-            <section class="banner-section position-relative">
-                <div class="container-fluid px-0">
-                    <div class="row mx-0">
-                        <div class="col-12 px-0 position-relative">
-                            <picture>
-                                <source media="(min-width:768px)"
-                                        srcset="assets/images/common/banner_background_pc.jpg">
-                                <img src="assets/images/common/banner_background_sp.jpg"
-                                    alt="えるみの店内の様子"
-                                    class="d-block w-100 h-100 banner-img"
-                                    fetchpriority="high">
-                            </picture>
-                            <div class="row mx-0">
-                                <div class="col-12 px-0">
-                                    <div class="banner-overlay-content text-center text-white mx-0">
-                                        <h1 class="ofs-21 ofs-lg-29 ols-300 lh-1f text-white spb-16 mb-0">ご 予 約</h1>      
-                                        <p class="hero-description ofs-5 ols-200 lh-1f text-white spb-32 spb-lg-40 mb-0">
-                                            えるみのご予約はこちらの <br class="d-md-none">
-                                            フォームからのみ<br class="d-none d-md-block"> 承っております。  
-                                        </p>                        
-                                        <div class="btn-reservation-wrapper">
-                                            <a href="#" class="btn-reservation ff-mincho ofs-3 ols-200 lh-1f text-white link-hover">予約する</a>
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-8 offset-lg-2">
+                                <form class="contact-form" action="" method="post">
+
+                                    <div class="contact-item smb-40">
+                                        <label class="contact-label d-flex align-items-center ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 spb-8 mb-0" for="contact-name">
+                                            お名前<span class="contact-required ofs-1 ofw-medium ols-200 lh-1 bg-required">必須</span>
+                                        </label>
+                                        <input class="contact-input bg-light" type="text" id="contact-name" name="name" required>
+                                    </div>
+
+                                    <div class="contact-item smb-40">
+                                        <label class="contact-label d-flex align-items-center ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 spb-8 mb-0" for="contact-kana">
+                                            お名前(フリガナ)<span class="contact-required ofs-1 ofw-medium ols-200 lh-1 bg-required">必須</span>
+                                        </label>
+                                        <input class="contact-input bg-light" type="text" id="contact-kana" name="kana" required>
+                                    </div>
+
+                                    <div class="contact-item smb-40">
+                                        <label class="contact-label d-flex align-items-center ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 spb-8 mb-0" for="contact-email">
+                                            メールアドレス<span class="contact-required ofs-1 ofw-medium ols-200 lh-1 bg-required">必須</span>
+                                        </label>
+                                        <input class="contact-input bg-light" type="email" id="contact-email" name="email" required>
+                                    </div>
+
+                                    <div class="contact-item smb-40">
+                                        <label class="contact-label d-flex align-items-center ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 spb-8 mb-0" for="contact-tel">
+                                            電話番号<span class="contact-required ofs-1 ofw-medium ols-200 lh-1 bg-required">必須</span>
+                                        </label>
+                                        <input class="contact-input bg-light" type="tel" id="contact-tel" name="tel" required>
+                                    </div>
+
+                                    <div class="contact-item smb-40">
+                                        <label class="contact-label d-flex align-items-center ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 spb-8 mb-0" for="contact-checkin">
+                                            ご宿泊希望日<span class="contact-required ofs-1 ofw-medium ols-200 lh-1 bg-required">必須</span>
+                                        </label>
+                                        <div class="contact-date-range" role="group" aria-labelledby="contact-checkin-label">
+                                            <input class="contact-input contact-date bg-light" type="date" id="contact-checkin" name="checkin" aria-label="チェックイン日" required>
+                                            <span class="contact-date-sep ofs-5 ofw-regular ols-100 lh-2" aria-hidden="true">〜</span>
+                                            <input class="contact-input contact-date bg-light" type="date" id="contact-checkout" name="checkout" aria-label="チェックアウト日" required>
                                         </div>
                                     </div>
-                                </div>
-                            </div>           
+
+
+                                    <div class="contact-item smb-40">
+                                        <label class="contact-label d-flex align-items-center ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 spb-8 mb-0" for="contact-message">
+                                            お問合せ内容<span class="contact-required ofs-1 ofw-medium ols-200 lh-1 bg-required">必須</span>
+                                        </label>
+                                        <textarea class="contact-textarea bg-light ofs-3 ols-100 lh-1f" id="contact-message" name="message"
+                                                placeholder="ご希望やご質問などご自由にお書きください。" required></textarea>
+                                    </div>
+
+                                
+                                    <div class="contact-privacy smb-56">
+                                        <label class="contact-check" for="contact-agree">
+                                            <input class="contact-checkbox" type="checkbox" id="contact-agree" name="agree" required>
+                                            <span class="contact-check-text ofs-5 ofw-regular ols-200 ols-lg-100 lh-1f lh-lg-2">プライバシーポリシーに同意する</span>
+                                        </label>
+
+                                        <p class="contact-note-title ofs-5 ofw-demibold ols-200 ols-lg-100 lh-1f lh-lg-2 mb-0">個人情報の取り扱いについて</p>
+                                        <p class="contact-note-text ofs-5 ofw-regular ols-200 ols-lg-100 lh-1f lh-lg-2">
+                                            当サイトより取得した個人情報はプライバシーポリシーに従い、厳重に管理いたします。<br>
+                                            個人情報保護法に定める例外事項を除き、本人の同意を得ることなく第三者に提供、開示しません。
+                                        </p>
+                                    </div>
+
+                                
+                                    <div class="contact-submit smb-120">
+                                        <button class="contact-button ofs-3 ofw-regular ols-200 lh-1f text-black" type="submit">
+                                            送信する
+                                        </button>
+                                    </div>
+
+                                </form>
+                            </div>
                         </div>
-                    </div>    
+
+
+                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
+
+        <!-- BANNER -->
+        <section class="banner-section position-relative">
+            <div class="container-fluid px-0">
+                <div class="row mx-0">
+                    <div class="col-12 px-0 position-relative">
+                        <picture>
+                            <source media="(min-width:768px)"
+                                    srcset="assets/images/common/banner_background_pc.jpg">
+                            <img src="assets/images/common/banner_background_sp.jpg"
+                                alt="えるみの店内の様子"
+                                class="d-block w-100 h-100 banner-img"
+                                fetchpriority="high">
+                        </picture>
+                        <div class="row mx-0">
+                            <div class="col-12 px-0">
+                                <div class="banner-overlay-content text-center text-white mx-0">
+                                    <h1 class="ofs-21 ofs-lg-29 ols-300 lh-1f text-white spb-16 mb-0">ご 予 約</h1>      
+                                    <p class="hero-description ofs-5 ols-200 lh-1f text-white spb-32 spb-lg-40 mb-0">
+                                        えるみのご予約はこちらの <br class="d-md-none">
+                                        フォームからのみ<br class="d-none d-md-block"> 承っております。  
+                                    </p>                        
+                                    <div class="btn-reservation-wrapper">
+                                        <a href="reservation.html" class="btn-reservation ff-mincho ofs-3 ols-200 lh-1f text-white link-hover">予約する</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>           
+                    </div>
+                </div>    
+            </div>
+        </section>
+
     </main>
  
-    <footer class="site-footer py-5">
-                <div class="container">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-12 col-lg-10">
-                            <div class="row mb-4 mb-lg-3 nav-section-wrapper spb-56 mx-0">                                                  
-                                <!-- Left Column: Vertical Logo (Centered on mobile, Left-aligned on desktop) -->
-                                <div class="col-12 col-md-3 col-md-gx-1 d-flex justify-content-center justify-content-md-start ps-lg-5 spb-56 spb-lg-0">  
-                                    <figure class="m-0 footer-logo">
-                                        <img src="assets/images/common/erumi-logo.svg" alt="erumi">
-                                    </figure>
-                                </div>
-                                <div class="col-12 col-md-7 footer-nav">
-                                    <!-- Nav Items (Stacked/Centered on Mobile, Row-based Grid on Desktop) -->
-                                <div class="d-flex flex-column flex-lg-row flex-wrap align-items-md-start opb-6 spb-md-48 custom-nav-flex">
-                                        <a href="index.html" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">TOP</a>
-                                        <a href="about.html" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">ABOUT</a>
-                                        <a href="#" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">ご滞在について</a>
-                                        <a href="#" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">よみもの</a>
-                                        <a href="news.html" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">お知らせ</a>
-                                        <a href="#" class="link-hover spb-32 spb-lg-0 ff-mincho lh-1f ols-200 text-white">交通アクセス</a>
-                                        <a href="faq.html" class="link-hover spb-lg-0 ff-mincho lh-1f ols-200 text-white">よくある質問</a>
-                                    </div>
-                                    <div class="d-flex flex-column flex-lg-row justify-content-md-start gap-3">
-                                        <a href="#" class="text-nowrap text-center btn-footer-action bg-white text-black link-hover lh-1f ols-200">お問い合わせ</a>
-                                        <a href="#" class="text-nowrap text-center btn-footer-action bg-white text-black link-hover lh-1f ols-200">予約する</a>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="row align-items-start text-md-start">
-                                <div class="col-12 col-md-8">
-                                    <div class="d-flex flex-column flex-md-row justify-content-md-start gap-2 gap-md-4 footer-legal spb-40 spb-md-16 opb-sm-">
-                                        <a href="#" class="ff-mincho ofs-3 lh-1f ols-200 text-white link-hover">プライバシーポリシー</a>
-                                        <a href="#" class="ff-mincho ofs-3 lh-1f ols-200 text-white link-hover">クッキーポリシー</a>
-                                        <a href="#" class="ff-mincho ofs-3 lh-1f ols-200 text-white link-hover">宿泊約款</a>
-                                    </div>
-                                    <div class="ff-mincho ofs-3  lh-1f ols-200 text-white pb-2 pb-lg-0">
-                                        兵庫県赤穂市尾崎730
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-4 text-md-end ff-mincho ofs-3  lh-1f ols-200 text-white">
-                                    ©2026 ERUMI
-                                </div>
+    <footer class="site-footer spt-80 spt-lg-120 spb-40 spb-lg-48">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="row mb-4 mb-lg-3 nav-section-wrapper spb-56 mx-0">                                                  
+                        
+                        <div class="col-12 col-md-3 col-md-gx-1 d-flex justify-content-center justify-content-md-start ps-lg-5 spb-56 spb-lg-0">  
+                            <figure class="m-0 footer-logo">
+                                <img src="assets/images/common/erumi-logo.svg" alt="erumi">
+                            </figure>
+                        </div>
+
+                        <div class="col-12 col-md-8 ps-lg-5 footer-nav">
+                            <ul class="d-flex flex-column flex-lg-row flex-wrap align-items-md-start list-unstyled ff-mincho lh-1f ols-200 text-white opb-6 ps-lg-3 spb-md-48 custom-nav-flex">
+                                <li class="link-hover spb-32 spb-lg-0"> <a href="index.html">TOP</a> </li>
+                                <li class="link-hover spb-32 spb-lg-0"> <a href="about.html">ABOUT</a> </li>
+                                <li class="link-hover spb-32 spb-lg-0"> <a href="about_your_stay.html">ご滞在について</a> </li>
+                                <li class="link-hover spb-32 spb-lg-0"> <a href="stories.html">よみもの</a> </li>
+                                <li class="link-hover spb-32 spb-lg-0"> <a href="news.html">お知らせ</a> </li>
+                                <li class="link-hover spb-32 spb-lg-0"> <a href="access.html">交通アクセス</a> </li>
+                                <li class="link-hover spb-32 spb-lg-0"> <a href="faq.html">よくある質問</a> </li>                              
+                            </ul>
+                            <div class="d-flex flex-column flex-lg-row justify-content-md-start ps-lg-3 gap-3">
+                                <a href="contact.html" class="text-nowrap text-center btn-footer-action bg-white text-black link-hover lh-1f ols-200">お問い合わせ</a>
+                                <a href="reservation.html" class="text-nowrap text-center btn-footer-action bg-white text-black link-hover lh-1f ols-200">予約する</a>
                             </div>
                         </div>
                     </div>
+
+                    <div class="row align-items-start text-md-start">
+                        <div class="col-12 col-md-8">
+                            <div class="d-flex flex-column flex-md-row justify-content-md-start gap-2 gap-md-4 footer-legal spb-40 spb-md-16 opb-sm-">
+                                <a href="privacy-policy.html" class="ff-mincho ofs-3 lh-1f ols-200 text-white link-hover">プライバシーポリシー</a>
+                                <a href="cookie_policy.html" class="ff-mincho ofs-3 lh-1f ols-200 text-white link-hover">クッキーポリシー</a>
+                                <a href="accommodation_policy.html" class="ff-mincho ofs-3 lh-1f ols-200 text-white link-hover">宿泊約款</a>
+                            </div>
+                            <div class="ff-mincho ofs-3  lh-1f ols-200 text-white pb-2 pb-lg-0">
+                                兵庫県赤穂市尾崎730
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 text-md-end ff-mincho ofs-3  lh-1f ols-200 text-white">
+                            ©2026 ERUMI
+                        </div>
+                    </div>
+
                 </div>
-            </footer>
+            </div>
+        </div>
+    </footer>
 
 <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
